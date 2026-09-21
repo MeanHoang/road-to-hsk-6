@@ -134,10 +134,26 @@
 .level-card__focus { font-family: var(--font-zh); }
 .level-card__ready { margin: var(--space-2) 0 0; font-size: var(--text-xs); color: var(--text-muted, #666); }
 
+/* --- khối có tiêu đề: nhịp dọc của trang nằm ở đây, không rải rác ở từng list --- */
+
+.block { margin-top: var(--space-7); }
+.block:first-of-type { margin-top: var(--space-6); }
+.block__title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-lg);
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+.block__count { font-size: var(--text-sm); font-weight: var(--weight-normal); color: var(--text-muted, #666); }
+.block__hint { margin: 0 0 var(--space-3); font-size: var(--text-sm); color: var(--text-muted, #666); }
+
+.page-head__zh { font-family: var(--font-zh); font-size: var(--text-base); color: var(--text-muted, #666); font-weight: var(--weight-normal); }
+
 /* --- danh sách bài --- */
 
-.volume { margin-bottom: var(--space-6); }
-.volume__label { font-family: var(--font-zh); font-size: var(--text-lg); }
+.volume + .volume { margin-top: var(--space-6); }
+.volume__label { font-family: var(--font-zh); font-size: var(--text-base); margin: 0 0 var(--space-3); color: var(--text-muted, #666); }
 
 .lesson-row {
   display: flex;
@@ -150,14 +166,24 @@
   color: inherit;
 }
 .lesson-row:hover { border-color: var(--tone-4); }
+.lesson-row { padding: var(--space-4); }
 .lesson-row__no {
   flex: 0 0 auto;
-  width: 28px;
-  text-align: center;
-  color: var(--text-muted, #666);
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--tone-4) 10%, transparent);
+  color: var(--tone-4);
   font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  font-variant-numeric: tabular-nums;
 }
-.lesson-row__title { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.lesson-row__title { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+.lesson-row__zh { font-size: var(--text-2xl); }
+.lesson-row__meta { flex: 0 0 auto; display: flex; align-items: center; gap: var(--space-2); }
+.lesson-row__count { font-size: var(--text-xs); color: var(--text-muted, #666); white-space: nowrap; }
 .lesson-row__title .pinyin, .lesson-row__title .vi { font-size: var(--text-xs); }
 
 .tag {
@@ -192,17 +218,20 @@
 .tool-list { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
 .tool-card {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  min-height: 56px;
+  gap: 2px;
+  min-height: 64px;
   padding: var(--space-3) var(--space-4);
   border: 1px solid var(--border, #e2e4e8);
   border-radius: var(--radius-md, 8px);
   text-decoration: none;
   color: inherit;
-  text-align: center;
 }
 .tool-card:hover { border-color: var(--tone-4); }
+.tool-card__label { font-weight: var(--weight-medium); }
+.tool-card__meta { font-size: var(--text-xs); color: var(--text-muted, #666); }
 
 /* --- bảng từ vựng --- */
 
