@@ -1,0 +1,60 @@
+{
+  "collection": "notes",
+  "lesson": "hsk1-l05",
+  "title": "Chú thích",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l05-n1",
+      "no": 1,
+      "titleZh": "疑问代词“几”",
+      "titleVi": "Đại từ nghi vấn 几",
+      "pattern": "几 + lượng từ + N?",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l05-n2",
+      "no": 2,
+      "titleZh": "百以内的数字",
+      "titleVi": "Các số dưới 100",
+      "pattern": "—",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l05-n3",
+      "no": 3,
+      "titleZh": "“了”表变化",
+      "titleVi": "Trợ từ chỉ sự thay đổi 了",
+      "pattern": "… + 了",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l05-n4",
+      "no": 4,
+      "titleZh": "“多+大”表示疑问",
+      "titleVi": "Câu hỏi dùng 多 + 大",
+      "pattern": "N + 多大?",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    }
+  ]
+}

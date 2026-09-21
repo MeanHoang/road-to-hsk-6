@@ -1,0 +1,1759 @@
+/* =============================================================================
+   COMPONENT — mỗi khối là một component, đặt tên theo vai trò.
+   Quy tắc: chỉ đọc semantic token. Không có giá trị px lẻ ngoài lưới 4/8.
+   ========================================================================== */
+
+/* ---------------------------------------------------------------- layout */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.stack-lg {
+  gap: var(--space-4);
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.row-between {
+  justify-content: space-between;
+}
+.row-end {
+  justify-content: flex-end;
+}
+.grid {
+  display: grid;
+  gap: var(--space-4);
+}
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Khoảng cách giữa các section: đủ lớn để mắt biết đây là nhóm mới. */
+.section {
+  margin-top: var(--space-7);
+}
+.section-title {
+  margin-bottom: var(--space-2);
+}
+.section-lead {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  margin-bottom: var(--space-4);
+  max-width: 68ch;
+}
+
+/* ------------------------------------------------------------- page head */
+.page-head {
+  padding: var(--space-6) 0 var(--space-4);
+}
+.page-head h1 {
+  margin-bottom: var(--space-1);
+}
+.page-head .eyebrow {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: var(--space-2);
+}
+.page-head .subtitle {
+  color: var(--text-muted);
+  font-size: var(--text-base);
+}
+
+/* ------------------------------------------------------------------ card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+.card-quiet {
+  background: var(--bg-subtle);
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------- surface */
+.callout {
+  border-left: 3px solid var(--brand);
+  background: var(--brand-surface);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+}
+.callout-warn {
+  border-left-color: var(--warning);
+  background: var(--warning-surface);
+}
+.notice {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+.caption {
+  font-size: var(--text-xs);
+  color: var(--text-subtle);
+  line-height: var(--leading-snug);
+}
+/* Link nằm trong chữ mờ phải gạch chân sẵn: chỉ đổi màu thôi thì lọt thỏm,
+   không ai nhận ra là bấm được. */
+.caption a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------- button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  min-height: 40px; /* vùng chạm tối thiểu */
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background var(--fast) var(--ease),
+    border-color var(--fast) var(--ease),
+    color var(--fast) var(--ease);
+}
+.btn:hover:not(:disabled) {
+  border-color: var(--border-strong);
+  background: var(--bg-subtle);
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Chỉ MỘT nút chính trên mỗi màn. Còn lại phải nhẹ hơn nó. */
+.btn-primary {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: var(--text-on-brand);
+  font-weight: var(--weight-bold);
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--brand-hover);
+  border-color: var(--brand-hover);
+}
+/* Nút phụ: nhấn bằng cách LÀM MỜ cái phụ, không phải tô đậm cái chính. */
+.btn-quiet {
+  background: transparent;
+  border-color: transparent;
+  color: var(--text-muted);
+  font-weight: var(--weight-normal);
+}
+.btn-quiet:hover:not(:disabled) {
+  background: var(--bg-subtle);
+  color: var(--text);
+}
+.btn-success {
+  border-color: color-mix(in srgb, var(--success) 45%, transparent);
+  color: var(--success);
+}
+.btn-danger {
+  border-color: color-mix(in srgb, var(--danger) 45%, transparent);
+  color: var(--danger);
+}
+.btn-sm {
+  min-height: 32px;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--text-xs);
+}
+
+/* Cụm nút. Khoảng cách nhỏ hơn --space-3 của hàng thường: nút trong cùng cụm
+   phải trông như một nhóm, tách khỏi thứ bên cạnh rõ hơn là tách khỏi nhau. */
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.btn-group-end {
+  justify-content: flex-end;
+}
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  min-height: 0;
+  padding: 0;
+  flex: 0 0 auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  transition: color var(--fast) var(--ease), border-color var(--fast) var(--ease);
+}
+/* Sao chưa bật để mờ hẳn: một bảng 50 từ mà cái nào cũng sáng thì nhìn như
+   nhau cả, mất luôn tác dụng đánh dấu. Bật rồi mới có màu và có nền. */
+.star-toggle {
+  font-size: var(--text-base);
+  line-height: 1;
+  color: var(--text-subtle);
+  border-color: transparent;
+  background: transparent;
+}
+.star-toggle:hover {
+  color: var(--warning);
+  border-color: var(--border);
+}
+.star-toggle.is-on {
+  color: var(--warning);
+  border-color: transparent;
+  background: var(--warning-surface);
+}
+.icon-btn:hover {
+  color: var(--brand);
+  border-color: var(--brand-border);
+}
+
+/* ----------------------------------------------------------------- badge */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.01em;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--surface-sunken);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.badge-brand {
+  background: var(--brand-surface);
+  color: var(--brand);
+}
+.badge-accent {
+  background: var(--accent-surface);
+  color: var(--accent);
+}
+.badge-success {
+  background: var(--success-surface);
+  color: var(--success);
+}
+.badge-warning {
+  background: var(--warning-surface);
+  color: var(--warning);
+}
+.badge-danger {
+  background: var(--danger-surface);
+  color: var(--danger);
+}
+.badge-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* -------------------------------------------------------------- progress */
+.progress {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+.progress-track {
+  display: block;
+  flex: 1;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--surface-sunken);
+  overflow: hidden;
+}
+.progress-fill {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  transition: width var(--slow) var(--ease);
+}
+.progress-track-sm {
+  height: 5px;
+  margin-top: var(--space-1);
+  max-width: 280px;
+}
+
+/* ------------------------------------------------------------ input/form */
+.input,
+.textarea {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-3);
+  min-height: 40px;
+  font-size: var(--text-sm);
+  transition: border-color var(--fast) var(--ease);
+}
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--text-subtle);
+}
+.input:hover,
+.textarea:hover {
+  border-color: var(--border-strong);
+}
+.textarea {
+  resize: vertical;
+  line-height: var(--leading-normal);
+}
+.textarea:disabled {
+  opacity: 0.4;
+}
+
+/* --------------------------------------------------------- nav list card */
+.nav-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  text-align: left;
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition:
+    border-color var(--fast) var(--ease),
+    box-shadow var(--normal) var(--ease),
+    transform var(--normal) var(--ease);
+}
+.nav-card:hover {
+  border-color: var(--brand-border);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.nav-card .lead-slot {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-md);
+  background: var(--surface-sunken);
+  border: 1px solid var(--border);
+  font-size: var(--text-xl);
+}
+.nav-card .lead-slot.brand {
+  background: linear-gradient(150deg, var(--brand), var(--accent));
+  border-color: transparent;
+  color: #ffffff;
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+}
+/* Cột nội dung: title và meta là <span> nên PHẢI ép về block,
+   nếu không hai dòng dính liền nhau thành một cục. */
+.nav-card .body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+.nav-card .title {
+  display: block;
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+}
+.nav-card .meta {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-snug);
+}
+.nav-card .chevron {
+  color: var(--text-subtle);
+  font-size: var(--text-xl);
+  flex: 0 0 auto;
+}
+.nav-card-empty {
+  cursor: default;
+  border-style: dashed;
+  box-shadow: none;
+  opacity: 0.6;
+}
+.nav-card-empty:hover {
+  transform: none;
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+/* ------------------------------------------------------------------ hero */
+.hero {
+  padding: var(--space-8) 0 var(--space-6);
+  text-align: center;
+}
+.hero h1 {
+  font-size: var(--text-5xl);
+  letter-spacing: -0.03em;
+  background: linear-gradient(96deg, var(--text) 30%, var(--brand) 75%, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: var(--space-3);
+}
+.hero p {
+  color: var(--text-muted);
+}
+.stat-row {
+  display: flex;
+  gap: var(--space-7);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: var(--space-6);
+}
+.stat b {
+  display: block;
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+}
+.stat span {
+  font-size: var(--text-xs);
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: var(--text-4xl);
+  }
+  .stat-row {
+    gap: var(--space-5);
+  }
+}
+
+/* Thanh tài khoản: tiến độ đang nằm ở đâu, và đổi được chỗ đó. */
+.account {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  margin-bottom: var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.account-mark,
+.account-avatar {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+}
+.account-mark {
+  display: grid;
+  place-items: center;
+  background: var(--surface-sunken);
+  color: var(--text-subtle);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-sm);
+}
+.account-mark.is-on {
+  background: var(--brand-surface);
+  color: var(--brand);
+}
+.account-avatar {
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+.account-who {
+  min-width: 0;
+  flex: 1;
+}
+.account-who b {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-snug);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.account-who span {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  line-height: var(--leading-snug);
+}
+.account-action {
+  flex: none;
+}
+@media (max-width: 640px) {
+  .account {
+    flex-wrap: wrap;
+  }
+  .account-action {
+    width: 100%;
+  }
+  /* Màn hẹp: mỗi nút một dòng, chiếm trọn bề ngang. Hai nút nhỏ nằm sát nhau
+     trên điện thoại là hai vùng bấm hẹp kề nhau — dễ bấm nhầm sang cái bên
+     cạnh, mà ở đây cái bên cạnh là đăng nhập. */
+  .account-action .btn-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .account-action .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ------------------------------------------------------------- flashcard */
+.flashcard-stage {
+  display: grid;
+  place-items: center;
+  gap: var(--space-4);
+}
+.flashcard {
+  width: min(380px, 100%);
+  height: 400px;
+  perspective: 1400px;
+  cursor: pointer;
+  position: relative;
+}
+.flashcard-inner {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transition: transform var(--slow) var(--ease);
+}
+.flashcard.is-flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  text-align: center;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+}
+.flashcard-face.back {
+  transform: rotateY(180deg);
+  background: linear-gradient(165deg, var(--surface-raised), var(--surface-sunken));
+}
+/* Góc trên phải của cả hai mặt thẻ. Nằm ngoài luồng flex nên không đẩy chữ
+   xuống, và mặt sau tuy bị rotateY(180deg) nhưng sao vẫn hiện đúng góc phải
+   vì cả mặt thẻ quay cùng nhau. */
+.card-star {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  z-index: 1;
+}
+.flashcard img {
+  max-height: 180px;
+  object-fit: contain;
+  background: var(--photo-bg);
+  border-radius: var(--radius-md);
+  padding: var(--space-1);
+}
+.flashcard .word {
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+}
+.flashcard .meaning {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-medium);
+}
+.flashcard .hint {
+  font-size: var(--text-xs);
+  color: var(--text-subtle);
+}
+/* UK và US mỗi giọng một dòng, không bao giờ ngắt bừa.
+   `.ipa-line` là display:contents nên cả hai dòng dùng CHUNG bộ cột của
+   .ipa-row — nhãn thẳng nhãn, phiên âm thẳng phiên âm, nút loa thẳng nút loa.
+   Gói theo dòng như vậy thì nút loa luôn dính với đúng phiên âm của nó. */
+.ipa-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, auto) auto;
+  justify-content: center;
+  align-items: center;
+  column-gap: var(--space-2);
+  row-gap: var(--space-1);
+  max-width: 100%;
+}
+.ipa-line {
+  display: contents;
+}
+.ipa-row .ipa-label {
+  justify-self: end;
+}
+.ipa-row .ipa {
+  justify-self: start;
+  overflow-wrap: anywhere;
+}
+.ipa {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+.ipa-label {
+  font-size: 10px;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-subtle);
+}
+
+/* ------------------------------------------------------------------ quiz */
+.quiz-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-4);
+}
+.quiz-prompt {
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  text-align: center;
+  padding: var(--space-5) 0 var(--space-2);
+}
+.quiz-prompt .ipa {
+  display: block;
+  margin-top: var(--space-2);
+  font-weight: var(--weight-normal);
+}
+/* Luôn 2 cột — 4 phương án thành lưới 2×2 cân đối, không bị 3+1 lệch hàng. */
+.options {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.options-stacked {
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (max-width: 640px) {
+  .options {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-3);
+  }
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  text-align: left;
+  padding: var(--space-4) var(--space-5);
+  min-height: 76px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--text-lg);
+  line-height: var(--leading-snug);
+  cursor: pointer;
+  transition:
+    border-color var(--fast) var(--ease),
+    background var(--fast) var(--ease);
+}
+/* Phương án bài nghe là câu dài nên giữ cỡ chữ đọc dài, không phóng to. */
+.options-stacked .option {
+  min-height: 60px;
+  font-size: var(--text-sm);
+  padding: var(--space-3) var(--space-4);
+}
+.option:hover:not(:disabled) {
+  border-color: var(--brand-border);
+  background: var(--bg-subtle);
+}
+.option .key {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface-sunken);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  color: var(--text-muted);
+}
+.options-stacked .option .key {
+  width: 26px;
+  height: 26px;
+  font-size: var(--text-xs);
+}
+.option.is-correct {
+  border-color: var(--success);
+  background: var(--success-surface);
+}
+.option.is-correct .key {
+  border-color: var(--success);
+  color: var(--success);
+}
+.option.is-wrong {
+  border-color: var(--danger);
+  background: var(--danger-surface);
+}
+.option.is-wrong .key {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.feedback {
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  border: 1px solid var(--border);
+  background: var(--bg-subtle);
+}
+.feedback-error {
+  border-color: color-mix(in srgb, var(--danger) 35%, transparent);
+  background: var(--danger-surface);
+}
+.feedback-success {
+  border-color: color-mix(in srgb, var(--success) 35%, transparent);
+  background: var(--success-surface);
+}
+
+/* ----------------------------------------------------------------- steps */
+.steps {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin: var(--space-4) 0 var(--space-2);
+}
+.step {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-subtle);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  cursor: pointer;
+  /* Liệt kê đúng ba thuộc tính thật sự đổi, không dùng `all`: `all` bắt trình
+     duyệt theo dõi mọi thuộc tính, nên thêm một dòng CSS bất kỳ vào .step sau
+     này là tự dưng nó cũng được animate mà không ai định thế. */
+  transition:
+    background var(--fast) var(--ease),
+    border-color var(--fast) var(--ease),
+    color var(--fast) var(--ease);
+}
+.step:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+.step.is-done {
+  background: var(--success-surface);
+  border-color: color-mix(in srgb, var(--success) 40%, transparent);
+  color: var(--success);
+}
+.step.is-wrong {
+  background: var(--danger-surface);
+  border-color: color-mix(in srgb, var(--danger) 40%, transparent);
+  color: var(--danger);
+}
+.step.is-current {
+  border-color: var(--brand);
+  color: var(--brand);
+  box-shadow: var(--ring);
+}
+
+/* ----------------------------------------------------------- audio track */
+.track {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.track .play {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--brand);
+  color: var(--text-on-brand);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background var(--fast) var(--ease);
+}
+.track .play:hover {
+  background: var(--brand-hover);
+}
+.track .seek {
+  flex: 1;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--surface-sunken);
+  position: relative;
+  cursor: pointer;
+}
+.track .seek > i {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-full);
+  background: var(--brand);
+}
+/* Chọn tốc độ. Là <select> thật của trình duyệt: trên điện thoại nó mở bánh xe
+   chọn quen tay, và người dùng bàn phím có sẵn mũi tên lên xuống. */
+.rate-select {
+  flex: 0 0 auto;
+  min-height: 32px;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  font-family: inherit;
+  cursor: pointer;
+}
+.rate-select:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+
+/* ------------------------------------------------------------ switch/tog */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+}
+.switch input {
+  position: absolute;
+  opacity: 0;
+}
+.switch .knob {
+  width: 38px;
+  height: 22px;
+  flex: 0 0 auto;
+  border-radius: var(--radius-full);
+  background: var(--surface-sunken);
+  border: 1px solid var(--border);
+  position: relative;
+  transition: background var(--fast) var(--ease);
+}
+.switch .knob::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-full);
+  background: var(--text-subtle);
+  transition: transform var(--fast) var(--ease), background var(--fast) var(--ease);
+}
+.switch input:checked + .knob {
+  background: var(--brand-surface);
+  border-color: var(--brand-border);
+}
+.switch input:checked + .knob::after {
+  transform: translateX(16px);
+  background: var(--brand);
+}
+
+/* ----------------------------------------------------------------- table */
+.table-wrap {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+th,
+td {
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+}
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+tbody tr:hover {
+  background: var(--bg-subtle);
+}
+/* Cột sao: hẹp nhất có thể, để nó không ăn chỗ của cột Nghĩa. */
+.col-star {
+  width: 1%;
+  padding-right: var(--space-2);
+  text-align: center;
+  color: var(--text-subtle);
+}
+/* Dòng gắn sao: một dải mảnh ở mép trái. Không tô nền cả dòng vì đụng với
+   nền hover có sẵn của bảng, mà chồng hai nền lên nhau thì chữ khó đọc. */
+tr.is-starred td:first-child {
+  box-shadow: inset 3px 0 0 var(--warning);
+}
+th {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-subtle);
+  background: var(--surface-sunken);
+  position: sticky;
+  top: 0;
+}
+
+/* ------------------------------------------------------- theory-specific */
+.formula {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-3) 0;
+  border-radius: var(--radius-md);
+  background: var(--surface-sunken);
+  border: 1px dashed var(--border-strong);
+}
+.example {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  font-size: var(--text-sm);
+}
+.example-en {
+  font-weight: var(--weight-medium);
+}
+.example-vi {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+.pair-list {
+  display: grid;
+  gap: var(--space-2);
+}
+.pair {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-sunken);
+  font-size: var(--text-sm);
+}
+.pair > span:first-child {
+  text-align: right;
+  font-weight: var(--weight-medium);
+}
+.pair > span:last-child {
+  font-weight: var(--weight-medium);
+}
+.pair em {
+  font-style: normal;
+  color: var(--text-subtle);
+  font-size: var(--text-xs);
+}
+.compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+.compare img {
+  width: 100%;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--photo-bg);
+}
+.compare figcaption {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+  line-height: var(--leading-snug);
+}
+@media (max-width: 640px) {
+  .compare {
+    grid-template-columns: 1fr;
+  }
+}
+.chip {
+  display: inline-block;
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--surface-sunken);
+  font-size: var(--text-sm);
+  margin: 0 var(--space-1) var(--space-1) 0;
+}
+
+/* -------------------------------------------------- S/V/O token labelling */
+.tokens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: var(--text-lg);
+  line-height: 2;
+}
+.token {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background var(--fast) var(--ease);
+}
+.token:hover {
+  background: var(--bg-subtle);
+}
+.token.is-s {
+  background: var(--brand-surface);
+  border-color: var(--brand-border);
+}
+.token.is-v {
+  background: var(--success-surface);
+  border-color: color-mix(in srgb, var(--success) 40%, transparent);
+}
+.token.is-o {
+  background: var(--accent-surface);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
+}
+.token.is-selected {
+  box-shadow: var(--ring);
+}
+.token.is-wrong {
+  box-shadow: 0 0 0 2px var(--danger);
+}
+
+/* ------------------------------------------------------------ picture ex */
+.picture-grid {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+.picture-cell {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+.picture-cell img {
+  width: 100%;
+  height: 112px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: var(--photo-bg);
+}
+.picture-cell .input {
+  text-align: center;
+  min-height: 34px;
+  font-size: var(--text-sm);
+}
+.picture-cell .input.is-correct {
+  border-color: var(--success);
+  color: var(--success);
+  font-weight: var(--weight-medium);
+}
+.picture-cell .input.is-wrong {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+
+/* ----------------------------------------------------------- media/photo */
+.photo {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: var(--photo-bg);
+}
+.photo-placeholder {
+  display: grid;
+  place-items: center;
+  min-height: 200px;
+  border-radius: var(--radius-lg);
+  border: 1px dashed var(--border-strong);
+  color: var(--text-subtle);
+  font-size: var(--text-sm);
+  text-align: center;
+  padding: var(--space-4);
+}
+
+/* ------------------------------------------------------ chép chính tả */
+.dictation-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+}
+
+/* Ô gõ có gạch chân từng từ.
+   <textarea> không tô được từng chữ, nên chữ thật để trong suốt và lớp "gương"
+   phía dưới vẽ lại đúng nội dung đó. Hai lớp BẮT BUỘC cùng font, cùng padding,
+   cùng border và cùng kiểu xuống dòng — lệch một thứ là chữ chạy khỏi con trỏ.
+   Gương nằm trong luồng nên nó quyết định chiều cao: dòng dài thì ô tự cao lên. */
+.dictation-field {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+.dictation-mirror,
+.dictation-entry {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font: inherit;
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.dictation-mirror {
+  border-color: var(--border);
+  background: var(--surface);
+  transition: border-color var(--fast) var(--ease);
+}
+.dictation-entry {
+  position: absolute;
+  inset: 0;
+  color: transparent;
+  caret-color: var(--text);
+  background: transparent;
+  resize: none;
+  overflow: hidden;
+}
+.dictation-entry::placeholder {
+  color: var(--text-subtle);
+}
+.dictation-field:hover .dictation-mirror {
+  border-color: var(--border-strong);
+}
+.dictation-field:focus-within .dictation-mirror {
+  border-color: var(--brand);
+}
+.dictation-field.is-correct .dictation-mirror {
+  border-color: color-mix(in srgb, var(--success) 45%, transparent);
+  background: var(--success-surface);
+}
+/* Gạch chân chứ không tô đỏ chữ: chữ vẫn phải đọc được để mà so với đáp án. */
+.dictation-bad {
+  text-decoration: underline wavy var(--warning);
+  text-underline-offset: 3px;
+}
+
+.dictation-line {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.dictation-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.dictation-verdict {
+  font-size: var(--text-sm);
+}
+.dictation-verdict.is-ok {
+  color: var(--success);
+}
+.dictation-verdict.is-bad {
+  color: var(--warning);
+}
+
+/* Đáp án lộ dần. Từ đã mở hiện chữ thật, phần còn lại là dấu sao đúng bằng độ
+   dài từ — đủ để biết còn mấy từ và mỗi từ dài bao nhiêu, chưa đủ để chép lại. */
+.dictation-reveal {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: var(--leading-normal);
+}
+.dictation-reveal .is-shown {
+  color: var(--success);
+  font-weight: var(--weight-medium);
+}
+.dictation-reveal .is-hidden {
+  color: var(--text-subtle);
+  letter-spacing: 1px;
+}
+
+/* --------------------------------------------------------------- skeleton */
+/* Thay cho dòng chữ "đang tải": người học thấy ngay TRANG sắp có hình dạng
+   gì, và khi nội dung về thì nó thế chỗ đúng khối đó chứ không nhảy dựng lên.
+   Ô skeleton luôn cao đúng bằng thứ nó đại diện, nếu không thì vẫn giật. */
+.skeleton {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--surface-sunken);
+}
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+  animation: skeleton-sweep 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-sweep {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Không chỉ làm chậm animation mà TẮT HẲN: base.css ép mọi animation về
+   0.01ms, mà vệt sáng này lặp vô hạn — để nguyên thành ra nhấp nháy liên tục,
+   đúng thứ mà "giảm chuyển động" muốn tránh. */
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    display: none;
+  }
+}
+
+/* Khối giả một thẻ điều hướng — trùng khớp .nav-card để không đổi chiều cao. */
+.nav-card-skeleton {
+  pointer-events: none;
+  box-shadow: none;
+}
+.nav-card-skeleton .lead-slot {
+  background: var(--surface-sunken);
+  border-color: var(--border);
+}
+
+/* ------------------------------------------------------- drawer điều hướng */
+/* Màn rộng: ngăn kéo ĐẨY nội dung sang phải, không đè lên.
+   Màn hẹp: ẩn hẳn, mở ra thì trượt lên trên nội dung kèm lớp mờ.
+   Cùng một biến `is-open` cho cả hai, chỉ khác cách CSS hiểu nó. */
+.shell {
+  min-height: 100vh;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  width: var(--drawer-w);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  transform: translateX(-100%);
+  transition: transform var(--normal) var(--ease);
+  overflow: hidden;
+}
+.drawer.is-open {
+  transform: translateX(0);
+}
+
+.drawer-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgba(8, 12, 20, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--normal) var(--ease);
+}
+.drawer-scrim.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-4) var(--space-3);
+  border-bottom: 1px solid var(--border);
+}
+.drawer-brand {
+  flex: 1;
+  min-width: 0;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+  color: var(--text);
+}
+.drawer-brand:hover {
+  text-decoration: none;
+  color: var(--brand);
+}
+.drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-3) var(--space-3) var(--space-6);
+}
+
+.nav-days {
+  list-style: none;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+}
+.nav-group + .nav-group {
+  margin-top: var(--space-1);
+}
+
+.nav-day {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  padding: var(--space-3);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: none;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+}
+.nav-day:hover {
+  background: var(--surface-sunken);
+}
+.nav-day.is-current {
+  color: var(--brand);
+}
+.nav-day-no {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-sunken);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+}
+.nav-day.is-current .nav-day-no {
+  background: linear-gradient(150deg, var(--brand), var(--accent));
+  color: #ffffff;
+}
+.nav-day-title {
+  flex: 1;
+  min-width: 0;
+  font-weight: var(--weight-medium);
+  font-size: var(--text-sm);
+}
+.nav-caret {
+  flex: none;
+  color: var(--text-subtle);
+  transition: transform var(--fast) var(--ease);
+}
+.nav-caret.is-open {
+  transform: rotate(90deg);
+}
+
+.nav-activities {
+  list-style: none;
+  margin: var(--space-1) 0 var(--space-2);
+  /* Đường kẻ dọc nối các mục con về đúng buổi của nó — nhìn là biết cái nào
+     thuộc buổi nào mà không cần thụt lề sâu thêm. */
+  padding: 0 0 0 var(--space-5);
+  border-left: 1px solid var(--border);
+  margin-left: var(--space-5);
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  min-height: 34px;
+}
+.nav-link:hover {
+  background: var(--surface-sunken);
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-link.is-current {
+  background: var(--brand-surface);
+  color: var(--brand);
+  font-weight: var(--weight-medium);
+}
+
+
+/* Màn rộng: ngăn kéo là một cột thật, không phải lớp phủ. */
+@media (min-width: 1024px) {
+  .drawer-scrim {
+    display: none;
+  }
+  .shell-main {
+    transition: padding-left var(--normal) var(--ease);
+  }
+  .shell.drawer-open .shell-main {
+    padding-left: var(--drawer-w);
+  }
+}
+
+/* Nút đóng/mở ngăn kéo. Một hình dáng, hai chỗ đứng:
+   - mở: nằm trong đầu ngăn kéo, mũi tên « để thu vào
+   - đóng: dính vào mép trái màn hình, mũi tên » để bung ra
+   Không có thanh tiêu đề riêng nữa nên nó phải tự nổi lên trên nội dung. */
+.drawer-handle {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  font-size: var(--text-lg);
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    color var(--fast) var(--ease),
+    border-color var(--fast) var(--ease),
+    background var(--fast) var(--ease);
+}
+.drawer-handle:hover {
+  color: var(--brand);
+  border-color: var(--brand-border);
+}
+
+/* Lúc đóng: bám mép trái, ngang tầm mắt với tiêu đề trang. */
+.drawer-handle:not(.drawer-handle-in) {
+  position: fixed;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: 25;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Chừa chỗ cho nút nổi, không thì nó đè lên chữ đầu trang. */
+.shell:not(.drawer-open) .app-shell {
+  padding-top: var(--space-8);
+}
+.shell.drawer-open .app-shell {
+  padding-top: var(--space-5);
+}
+
+/* ----------------------------------------------------------------- modal */
+/* Đáp án nằm thẳng trong trang thì nó chiếm chỗ, và chỉ cần còn đó lúc chuyển
+   câu là đập vào mắt. Đưa vào hộp thoại: xem xong đóng lại, trang sạch. */
+.modal-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  background: rgba(8, 12, 20, 0.55);
+  animation: modal-fade var(--fast) var(--ease);
+}
+
+.modal {
+  width: min(560px, 100%);
+  max-height: min(80vh, 640px);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  animation: modal-rise var(--normal) var(--ease);
+}
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border);
+}
+.modal-body {
+  overflow-y: auto;
+  padding: var(--space-5);
+}
+
+.script-list p {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: var(--space-2) 0;
+  line-height: var(--leading-snug);
+}
+.script-list p + p {
+  border-top: 1px solid var(--border);
+}
+
+@keyframes modal-fade {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes modal-rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* Màn hẹp: hộp thoại trượt lên từ đáy, nút đóng nằm trong tầm ngón cái. */
+@media (max-width: 640px) {
+  .modal-scrim {
+    align-items: flex-end;
+    padding: 0;
+  }
+  .modal {
+    width: 100%;
+    max-height: 85vh;
+    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    border-bottom: 0;
+    animation: modal-sheet var(--normal) var(--ease);
+  }
+  @keyframes modal-sheet {
+    from {
+      transform: translateY(100%);
+    }
+  }
+}
+
+
+/* ---------------------------------------------------------- bảng xếp hạng */
+/* Thứ hạng phải ĐỌC ĐƯỢC BẰNG MẮT trước khi đọc bằng số. Càng lên cao thì hàng
+   càng nặng ký: avatar to hơn, điểm to hơn, viền huy chương, nền đậm hơn. Một
+   danh sách phẳng đều tăm tắp thì phải dò từng dòng mới biết ai hơn ai.
+   Mỗi hàng là một thẻ rời chứ không phải dòng trong bảng — để hàng top nở ra
+   được mà không xô lệch hàng dưới. */
+.board {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.board-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  /* Chặn dải nền tràn ra ngoài góc bo. */
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* Dải chạy sau lưng, dài theo điểm so với người dẫn đầu. Con số nói CHÍNH XÁC
+   bao nhiêu, dải nói CÁCH BIỆT bao xa — không phải trừ nhẩm trong đầu. */
+.board-bar {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--brand) 16%, transparent),
+    color-mix(in srgb, var(--brand) 4%, transparent)
+  );
+  transition: width var(--slow) var(--ease);
+}
+
+.board-rank {
+  flex: 0 0 auto;
+  width: 26px;
+  text-align: center;
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+.board-avatar {
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  background: var(--surface-sunken);
+}
+.board-avatar-blank {
+  display: grid;
+  place-items: center;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text-muted);
+}
+.board-name {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  /* Tên dài thì cắt chứ không xuống dòng — hàng giữ đúng một dòng để mắt quét
+     cột điểm bên phải cho thẳng. */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.board-you {
+  color: var(--text-muted);
+  font-weight: var(--weight-normal);
+}
+.board-score {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  font-variant-numeric: tabular-nums;
+}
+.board-score b {
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  color: var(--text);
+}
+.board-score small {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+}
+
+/* --- ba hạng đầu: nở ra --- */
+.board-row.is-top {
+  padding: var(--space-3) var(--space-4);
+}
+.board-row.is-top .board-rank {
+  font-size: var(--text-xl);
+  width: 32px;
+}
+.board-row.is-top .board-avatar {
+  width: 40px;
+  height: 40px;
+}
+.board-row.is-top .board-name {
+  font-size: var(--text-base);
+}
+.board-row.is-top .board-score b {
+  font-size: var(--text-xl);
+}
+
+/* Viền huy chương: 2px để nó là đường viền thật sự chứ không phải sợi chỉ. */
+.board-row.is-top1,
+.board-row.is-top2,
+.board-row.is-top3 {
+  border-width: 2px;
+}
+.board-row.is-top1 {
+  border-color: var(--medal-1);
+}
+.board-row.is-top2 {
+  border-color: var(--medal-2);
+}
+.board-row.is-top3 {
+  border-color: var(--medal-3);
+}
+
+/* Quán quân được thêm một nấc: avatar to nhất, điểm to nhất, nền ánh vàng. */
+.board-row.is-top1 {
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+}
+.board-row.is-top1 .board-avatar {
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 0 0 2px var(--medal-1);
+}
+.board-row.is-top1 .board-score b {
+  font-size: var(--text-2xl);
+}
+.board-row.is-top1 .board-bar {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--medal-1) 22%, transparent),
+    color-mix(in srgb, var(--medal-1) 5%, transparent)
+  );
+}
+.board-row.is-top2 .board-bar {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--medal-2) 20%, transparent),
+    color-mix(in srgb, var(--medal-2) 4%, transparent)
+  );
+}
+.board-row.is-top3 .board-bar {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--medal-3) 20%, transparent),
+    color-mix(in srgb, var(--medal-3) 4%, transparent)
+  );
+}
+
+/* Hàng của chính mình: viền thương hiệu nét đứt. Không tô đậm chữ — đậm lên là
+   nó tranh nhấn mạnh với người dẫn đầu, mà người dẫn đầu mới là nội dung chính
+   của bảng. Nét đứt đủ để mắt tìm ra mình mà không cướp spotlight. */
+.board-row.is-me {
+  border-style: dashed;
+  border-color: var(--brand);
+}

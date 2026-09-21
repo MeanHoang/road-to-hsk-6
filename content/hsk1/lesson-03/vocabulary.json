@@ -1,0 +1,200 @@
+{
+  "collection": "vocabulary",
+  "lesson": "hsk1-l03",
+  "title": "Từ vựng",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l03-v01",
+      "no": 1,
+      "word": "叫",
+      "pinyin": "jiào",
+      "pos": "động từ",
+      "meaningVi": "gọi, tên là",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v02",
+      "no": 2,
+      "word": "什么",
+      "pinyin": "shénme",
+      "pos": "đại từ",
+      "meaningVi": "gì, cái gì",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v03",
+      "no": 3,
+      "word": "名字",
+      "pinyin": "míngzi",
+      "pos": "danh từ",
+      "meaningVi": "tên",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v04",
+      "no": 4,
+      "word": "我",
+      "pinyin": "wǒ",
+      "pos": "đại từ",
+      "meaningVi": "tôi",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v05",
+      "no": 5,
+      "word": "是",
+      "pinyin": "shì",
+      "pos": "động từ",
+      "meaningVi": "là",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v06",
+      "no": 6,
+      "word": "老师",
+      "pinyin": "lǎoshī",
+      "pos": "danh từ",
+      "meaningVi": "giáo viên",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v07",
+      "no": 7,
+      "word": "吗",
+      "pinyin": "ma",
+      "pos": "trợ từ",
+      "meaningVi": "không? (hỏi)",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v08",
+      "no": 8,
+      "word": "学生",
+      "pinyin": "xuésheng",
+      "pos": "danh từ",
+      "meaningVi": "học sinh",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v09",
+      "no": 9,
+      "word": "人",
+      "pinyin": "rén",
+      "pos": "danh từ",
+      "meaningVi": "người",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v10",
+      "no": 10,
+      "word": "李月",
+      "pinyin": "Lǐ Yuè",
+      "pos": "tên riêng",
+      "meaningVi": "Lý Nguyệt",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v11",
+      "no": 11,
+      "word": "中国",
+      "pinyin": "Zhōngguó",
+      "pos": "tên riêng",
+      "meaningVi": "Trung Quốc",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l03-v12",
+      "no": 12,
+      "word": "美国",
+      "pinyin": "Měiguó",
+      "pos": "tên riêng",
+      "meaningVi": "Mỹ",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    }
+  ]
+}

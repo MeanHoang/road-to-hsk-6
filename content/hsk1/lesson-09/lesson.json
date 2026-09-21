@@ -1,0 +1,28 @@
+{
+  "slug": "hsk1-l09",
+  "no": 9,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "你儿子在哪儿工作",
+  "titlePinyin": "Nǐ érzi zài nǎr gōngzuò",
+  "titleVi": "Con trai ông làm việc ở đâu?",
+  "page": null,
+  "isPhoneticsIntro": false,
+  "hasCulture": false,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

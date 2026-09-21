@@ -1,0 +1,26 @@
+{
+  "slug": "hsk1-l02",
+  "no": 2,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "谢谢你",
+  "titlePinyin": "Xièxie nǐ",
+  "titleVi": "Cảm ơn anh!",
+  "page": 20,
+  "isPhoneticsIntro": true,
+  "hasCulture": false,
+  "collections": [
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

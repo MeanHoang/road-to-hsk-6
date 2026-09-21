@@ -1,0 +1,217 @@
+/* =============================================================================
+   Lớp riêng cho tiếng Trung — chỉ đọc token ở tokens.css, không định nghĩa token.
+
+   Ba thứ tiếng Anh không cần mà tiếng Trung cần:
+   1. Chữ Hán phải to hơn chữ Latinh mới đọc được nét (--text-2xl trở lên).
+   2. Font chữ Hán phải khai báo riêng, không để trình duyệt tự chọn — nếu
+      không macOS sẽ rơi về font tiếng Nhật, một số chữ ra dạng Kanji.
+   3. Thanh điệu cần mã màu để nhìn phát ra ngay, đây là thứ học bằng mắt.
+   ========================================================================== */
+
+:root {
+  --font-zh: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+
+  /* Màu thanh điệu — quy ước phổ biến trong giới học tiếng Trung */
+  --tone-1: #d64545; /* cao đều  */
+  --tone-2: #d9822b; /* lên      */
+  --tone-3: #3d8f5b; /* xuống-lên */
+  --tone-4: #3f6fd8; /* xuống gắt */
+  --tone-0: #8a8f98; /* thanh nhẹ */
+}
+
+.zh {
+  font-family: var(--font-zh);
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
+}
+
+.zh--big {
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-bold);
+}
+
+.pinyin {
+  font-style: italic;
+  color: var(--text-muted, #666);
+  letter-spacing: var(--tracking-wide);
+}
+
+.vi {
+  color: var(--text-muted, #666);
+}
+
+.tones {
+  display: inline-block;
+  padding: 0 var(--space-2);
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  background: color-mix(in srgb, currentColor 12%, transparent);
+}
+
+.tone-1 { color: var(--tone-1); }
+.tone-2 { color: var(--tone-2); }
+.tone-3 { color: var(--tone-3); }
+.tone-4 { color: var(--tone-4); }
+.tone-0 { color: var(--tone-0); }
+
+.tones--spoken {
+  margin-left: var(--space-1);
+  color: var(--tone-2);
+}
+
+/* --- layout chung --- */
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-5) var(--space-4) var(--space-8);
+}
+
+.page-head { margin-bottom: var(--space-6); }
+.page-head h1 { margin: var(--space-2) 0; }
+
+.back {
+  display: inline-block;
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+  text-decoration: none;
+}
+
+.muted { color: var(--text-muted, #666); font-size: var(--text-sm); }
+.focus { font-weight: var(--weight-medium); }
+
+.notice {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md, 8px);
+  background: color-mix(in srgb, var(--tone-2) 10%, transparent);
+  font-size: var(--text-sm);
+}
+
+/* --- danh sách cấp --- */
+
+.level-list, .lesson-list, .section-list, .tool-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.level-list { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+
+.level-card {
+  display: block;
+  padding: var(--space-4);
+  border: 1px solid var(--border, #e2e4e8);
+  border-radius: var(--radius-lg, 12px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.level-card:hover { border-color: var(--tone-4); }
+.level-card__top { display: flex; justify-content: space-between; align-items: baseline; }
+.level-card__no { font-size: var(--text-xl); font-weight: var(--weight-bold); }
+.level-card__book { font-family: var(--font-zh); color: var(--text-muted, #666); }
+.level-card__topics { font-size: var(--text-sm); margin: var(--space-2) 0; }
+
+.level-card__stats {
+  display: flex;
+  gap: var(--space-4);
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-xs);
+}
+.level-card__stats dt { color: var(--text-muted, #666); }
+.level-card__stats dd { margin: 0; font-weight: var(--weight-medium); }
+.level-card__focus { font-family: var(--font-zh); }
+.level-card__ready { margin: var(--space-2) 0 0; font-size: var(--text-xs); color: var(--text-muted, #666); }
+
+/* --- danh sách bài --- */
+
+.volume { margin-bottom: var(--space-6); }
+.volume__label { font-family: var(--font-zh); font-size: var(--text-lg); }
+
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border, #e2e4e8);
+  border-radius: var(--radius-md, 8px);
+  text-decoration: none;
+  color: inherit;
+}
+.lesson-row:hover { border-color: var(--tone-4); }
+.lesson-row__no {
+  flex: 0 0 auto;
+  width: 28px;
+  text-align: center;
+  color: var(--text-muted, #666);
+  font-size: var(--text-sm);
+}
+.lesson-row__title { display: flex; flex-direction: column; gap: 2px; flex: 1; }
+.lesson-row__title .pinyin, .lesson-row__title .vi { font-size: var(--text-xs); }
+
+.tag {
+  font-size: var(--text-xs);
+  padding: 2px var(--space-2);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--tone-1) 14%, transparent);
+  color: var(--tone-1);
+  font-family: var(--font-zh);
+}
+.tag--muted { background: color-mix(in srgb, var(--tone-0) 16%, transparent); color: var(--tone-0); font-family: inherit; }
+
+/* --- các phần trong bài --- */
+
+.section-list { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  border: 1px solid var(--border, #e2e4e8);
+  border-radius: var(--radius-md, 8px);
+  text-decoration: none;
+  color: inherit;
+}
+.section-card:hover { border-color: var(--tone-4); }
+.section-card__zh { font-family: var(--font-zh); font-size: var(--text-2xl); }
+.section-card__label { font-size: var(--text-xs); color: var(--text-muted, #666); }
+
+.tool-list { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+.tool-card {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border, #e2e4e8);
+  border-radius: var(--radius-md, 8px);
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+}
+.tool-card:hover { border-color: var(--tone-4); }
+
+/* --- bảng từ vựng --- */
+
+.filters { display: flex; gap: var(--space-3); margin-bottom: var(--space-4); }
+.input {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--border, #e2e4e8);
+  border-radius: var(--radius-md, 8px);
+  font: inherit;
+}
+.filters .input:first-child { flex: 1; }
+
+.vocab-table { width: 100%; border-collapse: collapse; }
+.vocab-table th, .vocab-table td {
+  text-align: left;
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--border, #e2e4e8);
+  vertical-align: middle;
+}
+.vocab-table th { font-size: var(--text-xs); color: var(--text-muted, #666); font-weight: var(--weight-medium); }
+.vocab-table .zh { font-size: var(--text-2xl); }
+
+.icon-btn { border: 0; background: none; cursor: pointer; font-size: var(--text-lg); }

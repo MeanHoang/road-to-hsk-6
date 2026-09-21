@@ -1,0 +1,47 @@
+{
+  "collection": "notes",
+  "lesson": "hsk1-l04",
+  "title": "Chú thích",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l04-n1",
+      "no": 1,
+      "titleZh": "疑问代词“谁”、“哪”",
+      "titleVi": "Đại từ nghi vấn 谁 và 哪",
+      "pattern": "… 是 + 谁? / 哪 + 国 + 人?",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l04-n2",
+      "no": 2,
+      "titleZh": "结构助词“的”",
+      "titleVi": "Trợ từ kết cấu 的",
+      "pattern": "A + 的 + B",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l04-n3",
+      "no": 3,
+      "titleZh": "疑问助词“呢”(1)",
+      "titleVi": "Trợ từ nghi vấn 呢 (1)",
+      "pattern": "N + 呢?",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    }
+  ]
+}

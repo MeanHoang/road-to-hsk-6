@@ -1,0 +1,28 @@
+{
+  "slug": "hsk1-l04",
+  "no": 4,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "她是我的汉语老师",
+  "titlePinyin": "Tā shì wǒ de Hànyǔ lǎoshī",
+  "titleVi": "Cô ấy là cô giáo dạy tôi tiếng Trung Quốc",
+  "page": 34,
+  "isPhoneticsIntro": false,
+  "hasCulture": false,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

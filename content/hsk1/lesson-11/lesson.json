@@ -1,0 +1,28 @@
+{
+  "slug": "hsk1-l11",
+  "no": 11,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "现在几点",
+  "titlePinyin": "Xiànzài jǐ diǎn",
+  "titleVi": "Bây giờ là mấy giờ?",
+  "page": null,
+  "isPhoneticsIntro": false,
+  "hasCulture": false,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

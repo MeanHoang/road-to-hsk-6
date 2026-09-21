@@ -1,0 +1,47 @@
+{
+  "collection": "notes",
+  "lesson": "hsk1-l03",
+  "title": "Chú thích",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l03-n1",
+      "no": 1,
+      "titleZh": "疑问代词“什么”",
+      "titleVi": "Đại từ nghi vấn 什么",
+      "pattern": "S + 叫 + 什么 + N?",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l03-n2",
+      "no": 2,
+      "titleZh": "“是”字句",
+      "titleVi": "Câu có từ 是",
+      "pattern": "A + 是 + B",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l03-n3",
+      "no": 3,
+      "titleZh": "用“吗”的疑问句",
+      "titleVi": "Câu hỏi có từ 吗",
+      "pattern": "Câu trần thuật + 吗?",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    }
+  ]
+}

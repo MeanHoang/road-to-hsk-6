@@ -1,0 +1,29 @@
+{
+  "slug": "hsk1-l10",
+  "no": 10,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "我能坐这儿吗",
+  "titlePinyin": "Wǒ néng zuò zhèr ma",
+  "titleVi": "Tôi có thể ngồi ở đây không?",
+  "page": null,
+  "isPhoneticsIntro": false,
+  "hasCulture": true,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply",
+    "culture"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

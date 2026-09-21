@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "level": 1,
+  "slug": "hsk1",
+  "lessons": [
+    "hsk1-l01",
+    "hsk1-l02",
+    "hsk1-l03",
+    "hsk1-l04",
+    "hsk1-l05",
+    "hsk1-l06",
+    "hsk1-l07",
+    "hsk1-l08",
+    "hsk1-l09",
+    "hsk1-l10",
+    "hsk1-l11",
+    "hsk1-l12",
+    "hsk1-l13",
+    "hsk1-l14",
+    "hsk1-l15"
+  ]
+}

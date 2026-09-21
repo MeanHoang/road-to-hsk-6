@@ -1,0 +1,104 @@
+{
+  "collection": "vocabulary",
+  "lesson": "hsk1-l01",
+  "title": "Từ vựng",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l01-v01",
+      "no": 1,
+      "word": "你",
+      "pinyin": "nǐ",
+      "pos": "đại từ",
+      "meaningVi": "bạn, anh, chị",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l01-v02",
+      "no": 2,
+      "word": "好",
+      "pinyin": "hǎo",
+      "pos": "tính từ",
+      "meaningVi": "tốt, khoẻ",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l01-v03",
+      "no": 3,
+      "word": "您",
+      "pinyin": "nín",
+      "pos": "đại từ",
+      "meaningVi": "ngài (kính ngữ)",
+      "isOverSyllabus": true,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l01-v04",
+      "no": 4,
+      "word": "你们",
+      "pinyin": "nǐmen",
+      "pos": "đại từ",
+      "meaningVi": "các bạn",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l01-v05",
+      "no": 5,
+      "word": "对不起",
+      "pinyin": "duìbuqǐ",
+      "pos": "động từ",
+      "meaningVi": "xin lỗi",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l01-v06",
+      "no": 6,
+      "word": "没关系",
+      "pinyin": "méi guānxi",
+      "pos": "cụm",
+      "meaningVi": "không sao",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    }
+  ]
+}

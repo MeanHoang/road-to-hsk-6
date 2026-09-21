@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    {
+      "level": 1,
+      "slug": "hsk1",
+      "title": "HSK 1",
+      "book": "标准教程1",
+      "vocabCumulative": 150,
+      "lessonCount": 15,
+      "classHours": [30, 34],
+      "volumes": [{ "id": "hsk1", "label": null, "lessonCount": 15 }],
+      "topics": "Chào hỏi, giới thiệu bản thân, gia đình, số đếm, thời gian, địa điểm",
+      "grammarFocus": "Pinyin và phát âm cơ bản"
+    },
+    {
+      "level": 2,
+      "slug": "hsk2",
+      "title": "HSK 2",
+      "book": "标准教程2",
+      "vocabCumulative": 300,
+      "lessonCount": 15,
+      "classHours": [30, 36],
+      "volumes": [{ "id": "hsk2", "label": null, "lessonCount": 15 }],
+      "topics": "Mua sắm, hỏi đường, thời tiết, sở thích, mô tả đồ vật",
+      "grammarFocus": "了 · 会 · 能 · 比"
+    },
+    {
+      "level": 3,
+      "slug": "hsk3",
+      "title": "HSK 3",
+      "book": "标准教程3",
+      "vocabCumulative": 600,
+      "lessonCount": 20,
+      "classHours": [35, 40],
+      "volumes": [{ "id": "hsk3", "label": null, "lessonCount": 20 }],
+      "topics": "Du lịch, công việc, sức khoẻ, cảm xúc, kể chuyện ngắn",
+      "grammarFocus": "Câu phức · dạng bài sửa lỗi sai"
+    },
+    {
+      "level": 4,
+      "slug": "hsk4",
+      "title": "HSK 4",
+      "book": "标准教程4",
+      "vocabCumulative": 1200,
+      "lessonCount": 20,
+      "classHours": [75, 80],
+      "volumes": [
+        { "id": "hsk4a", "label": "上", "lessonCount": 10 },
+        { "id": "hsk4b", "label": "下", "lessonCount": 10 }
+      ],
+      "topics": "Xã hội, môi trường, giáo dục, đời sống đô thị",
+      "grammarFocus": "被 · 把 · câu điều kiện"
+    },
+    {
+      "level": 5,
+      "slug": "hsk5",
+      "title": "HSK 5",
+      "book": "标准教程5",
+      "vocabCumulative": 2500,
+      "lessonCount": 36,
+      "classHours": [170, 180],
+      "volumes": [
+        { "id": "hsk5a", "label": "上", "lessonCount": 18 },
+        { "id": "hsk5b", "label": "下", "lessonCount": 18 }
+      ],
+      "topics": "Văn hoá, kinh tế, xã hội, tâm lý",
+      "grammarFocus": "Suy luận, diễn đạt chi tiết"
+    },
+    {
+      "level": 6,
+      "slug": "hsk6",
+      "title": "HSK 6",
+      "book": "标准教程6",
+      "vocabCumulative": 5000,
+      "lessonCount": 40,
+      "classHours": [170, 180],
+      "volumes": [
+        { "id": "hsk6a", "label": "上", "lessonCount": 20 },
+        { "id": "hsk6b", "label": "下", "lessonCount": 20 }
+      ],
+      "topics": "Chính trị, khoa học, văn học",
+      "grammarFocus": "Đọc báo, trình bày quan điểm"
+    }
+  ]
+}

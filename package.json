@@ -1,0 +1,23 @@
+{
+  "name": "road-to-hsk-6",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "validate": "node scripts/validate-content.mjs",
+    "gen": "node scripts/gen-bundled.mjs",
+    "test:pinyin": "node scripts/test-pinyin.mjs"
+  },
+  "dependencies": {
+    "firebase": "^12.18.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "firebase-admin": "^14.3.0"
+  }
+}

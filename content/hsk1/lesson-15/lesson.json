@@ -1,0 +1,29 @@
+{
+  "slug": "hsk1-l15",
+  "no": 15,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "我是坐飞机来的",
+  "titlePinyin": "Wǒ shì zuò fēijī lái de",
+  "titleVi": "Tôi ngồi máy bay đến",
+  "page": null,
+  "isPhoneticsIntro": false,
+  "hasCulture": true,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply",
+    "culture"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

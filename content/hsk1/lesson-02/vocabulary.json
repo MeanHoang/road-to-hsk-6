@@ -1,0 +1,72 @@
+{
+  "collection": "vocabulary",
+  "lesson": "hsk1-l02",
+  "title": "Từ vựng",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l02-v01",
+      "no": 1,
+      "word": "谢谢",
+      "pinyin": "xièxie",
+      "pos": "động từ",
+      "meaningVi": "cảm ơn",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l02-v02",
+      "no": 2,
+      "word": "不",
+      "pinyin": "bù",
+      "pos": "phó từ",
+      "meaningVi": "không",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l02-v03",
+      "no": 3,
+      "word": "不客气",
+      "pinyin": "bú kèqi",
+      "pos": "cụm",
+      "meaningVi": "đừng khách sáo",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l02-v04",
+      "no": 4,
+      "word": "再见",
+      "pinyin": "zàijiàn",
+      "pos": "động từ",
+      "meaningVi": "tạm biệt",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    }
+  ]
+}

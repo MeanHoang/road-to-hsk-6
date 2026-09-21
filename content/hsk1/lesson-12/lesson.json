@@ -1,0 +1,28 @@
+{
+  "slug": "hsk1-l12",
+  "no": 12,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "明天天气怎么样",
+  "titlePinyin": "Míngtiān tiānqì zěnmeyàng",
+  "titleVi": "Thời tiết ngày mai như thế nào?",
+  "page": null,
+  "isPhoneticsIntro": false,
+  "hasCulture": false,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

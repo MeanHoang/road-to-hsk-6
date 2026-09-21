@@ -1,0 +1,168 @@
+{
+  "collection": "vocabulary",
+  "lesson": "hsk1-l04",
+  "title": "Từ vựng",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l04-v01",
+      "no": 1,
+      "word": "她",
+      "pinyin": "tā",
+      "pos": "đại từ",
+      "meaningVi": "cô ấy",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v02",
+      "no": 2,
+      "word": "谁",
+      "pinyin": "shéi",
+      "pos": "đại từ",
+      "meaningVi": "ai",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v03",
+      "no": 3,
+      "word": "的",
+      "pinyin": "de",
+      "pos": "trợ từ",
+      "meaningVi": "của",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v04",
+      "no": 4,
+      "word": "汉语",
+      "pinyin": "Hànyǔ",
+      "pos": "danh từ",
+      "meaningVi": "tiếng Hán",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v05",
+      "no": 5,
+      "word": "哪",
+      "pinyin": "nǎ",
+      "pos": "đại từ",
+      "meaningVi": "nào",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v06",
+      "no": 6,
+      "word": "国",
+      "pinyin": "guó",
+      "pos": "danh từ",
+      "meaningVi": "nước, quốc gia",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v07",
+      "no": 7,
+      "word": "呢",
+      "pinyin": "ne",
+      "pos": "trợ từ",
+      "meaningVi": "thì sao? (hỏi)",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v08",
+      "no": 8,
+      "word": "他",
+      "pinyin": "tā",
+      "pos": "đại từ",
+      "meaningVi": "anh ấy",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v09",
+      "no": 9,
+      "word": "同学",
+      "pinyin": "tóngxué",
+      "pos": "danh từ",
+      "meaningVi": "bạn học",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    },
+    {
+      "id": "h1l04-v10",
+      "no": 10,
+      "word": "朋友",
+      "pinyin": "péngyou",
+      "pos": "danh từ",
+      "meaningVi": "bạn bè",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "pinyin": "ai",
+        "meaningVi": "ai",
+        "isOverSyllabus": "pdf"
+      }
+    }
+  ]
+}

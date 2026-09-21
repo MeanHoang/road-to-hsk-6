@@ -1,0 +1,28 @@
+{
+  "slug": "hsk1-l03",
+  "no": 3,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "你叫什么名字",
+  "titlePinyin": "Nǐ jiào shénme míngzi",
+  "titleVi": "Cô tên gì?",
+  "page": 26,
+  "isPhoneticsIntro": false,
+  "hasCulture": false,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

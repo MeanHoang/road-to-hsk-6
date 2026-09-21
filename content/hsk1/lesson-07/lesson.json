@@ -1,0 +1,28 @@
+{
+  "slug": "hsk1-l07",
+  "no": 7,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "今天几号",
+  "titlePinyin": "Jīntiān jǐ hào",
+  "titleVi": "Hôm nay là ngày mấy?",
+  "page": null,
+  "isPhoneticsIntro": false,
+  "hasCulture": false,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "hsk1-l13",
+  "no": 13,
+  "level": 1,
+  "volume": "hsk1",
+  "titleZh": "他在学做中国菜呢",
+  "titlePinyin": "Tā zài xué zuò Zhōngguó cài ne",
+  "titleVi": "Cậu ấy đang học nấu món Trung Quốc",
+  "page": null,
+  "isPhoneticsIntro": false,
+  "hasCulture": false,
+  "collections": [
+    "warmup",
+    "text",
+    "vocabulary",
+    "pinyin",
+    "hanzi",
+    "notes",
+    "exercises",
+    "apply"
+  ],
+  "source": {
+    "titleZh": "pdf",
+    "titleVi": "pdf",
+    "titlePinyin": "ai",
+    "page": "pdf"
+  }
+}
