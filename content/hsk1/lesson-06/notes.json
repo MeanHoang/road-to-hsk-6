@@ -1,0 +1,47 @@
+{
+  "collection": "notes",
+  "lesson": "hsk1-l06",
+  "title": "Chú thích",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l06-n1",
+      "no": 1,
+      "titleZh": "能愿动词“会”(1)",
+      "titleVi": "Động từ năng nguyện 会 (1)",
+      "pattern": "S + 会 + V",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l06-n2",
+      "no": 2,
+      "titleZh": "形容词谓语句",
+      "titleVi": "Câu có vị ngữ là tính từ",
+      "pattern": "S + (很) + Adj",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l06-n3",
+      "no": 3,
+      "titleZh": "疑问代词“怎么”(1)",
+      "titleVi": "Đại từ nghi vấn 怎么 (1)",
+      "pattern": "怎么 + V?",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    }
+  ]
+}

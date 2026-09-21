@@ -6,7 +6,7 @@
   "titleZh": "今天几号",
   "titlePinyin": "Jīntiān jǐ hào",
   "titleVi": "Hôm nay là ngày mấy?",
-  "page": null,
+  "page": 60,
   "isPhoneticsIntro": false,
   "hasCulture": false,
   "collections": [

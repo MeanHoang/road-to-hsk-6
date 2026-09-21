@@ -15,9 +15,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -31,9 +32,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -47,25 +49,27 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
       "id": "h1l05-v04",
       "no": 4,
       "word": "女儿",
-      "pinyin": "nǚér",
+      "pinyin": "nǚ’ér",
       "pos": "danh từ",
       "meaningVi": "con gái",
       "isOverSyllabus": false,
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -79,9 +83,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -95,9 +100,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -111,9 +117,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -127,9 +134,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -143,9 +151,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -159,9 +168,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     }
   ]

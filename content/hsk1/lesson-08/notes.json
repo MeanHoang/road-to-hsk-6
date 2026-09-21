@@ -1,15 +1,15 @@
 {
   "collection": "notes",
-  "lesson": "hsk1-l05",
+  "lesson": "hsk1-l08",
   "title": "Chú thích",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l05-n1",
+      "id": "h1l08-n1",
       "no": 1,
-      "titleZh": "疑问代词“几”",
-      "titleVi": "Đại từ nghi vấn 几",
-      "pattern": "几 + lượng từ + N?",
+      "titleZh": "能愿动词“想”",
+      "titleVi": "Động từ năng nguyện 想",
+      "pattern": "S + 想 + V",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -18,11 +18,11 @@
       }
     },
     {
-      "id": "h1l05-n2",
+      "id": "h1l08-n2",
       "no": 2,
-      "titleZh": "百以内的数字",
-      "titleVi": "Các số dưới 100",
-      "pattern": null,
+      "titleZh": "疑问代词“多少”",
+      "titleVi": "Đại từ nghi vấn 多少",
+      "pattern": "多少 + (lượng từ) + N?",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -31,11 +31,11 @@
       }
     },
     {
-      "id": "h1l05-n3",
+      "id": "h1l08-n3",
       "no": 3,
-      "titleZh": "“了”表变化",
-      "titleVi": "Trợ từ chỉ sự thay đổi 了",
-      "pattern": "… + 了",
+      "titleZh": "量词“个”、“口”",
+      "titleVi": "Lượng từ 个 và 口",
+      "pattern": "số + 个/口 + N",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -44,11 +44,11 @@
       }
     },
     {
-      "id": "h1l05-n4",
+      "id": "h1l08-n4",
       "no": 4,
-      "titleZh": "“多+大”表示疑问",
-      "titleVi": "Câu hỏi dùng 多 + 大",
-      "pattern": "N + 多大?",
+      "titleZh": "钱数的表达",
+      "titleVi": "Cách diễn đạt số tiền",
+      "pattern": "số + 块 (+ 钱)",
       "examples": [],
       "source": {
         "titleZh": "pdf",

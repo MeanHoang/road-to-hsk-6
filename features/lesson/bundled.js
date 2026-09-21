@@ -18,15 +18,35 @@ import hsk1l05lesson from '@/content/hsk1/lesson-05/lesson.json';
 import hsk1l05vocabulary from '@/content/hsk1/lesson-05/vocabulary.json';
 import hsk1l05notes from '@/content/hsk1/lesson-05/notes.json';
 import hsk1l06lesson from '@/content/hsk1/lesson-06/lesson.json';
+import hsk1l06vocabulary from '@/content/hsk1/lesson-06/vocabulary.json';
+import hsk1l06notes from '@/content/hsk1/lesson-06/notes.json';
 import hsk1l07lesson from '@/content/hsk1/lesson-07/lesson.json';
+import hsk1l07vocabulary from '@/content/hsk1/lesson-07/vocabulary.json';
+import hsk1l07notes from '@/content/hsk1/lesson-07/notes.json';
 import hsk1l08lesson from '@/content/hsk1/lesson-08/lesson.json';
+import hsk1l08vocabulary from '@/content/hsk1/lesson-08/vocabulary.json';
+import hsk1l08notes from '@/content/hsk1/lesson-08/notes.json';
 import hsk1l09lesson from '@/content/hsk1/lesson-09/lesson.json';
+import hsk1l09vocabulary from '@/content/hsk1/lesson-09/vocabulary.json';
+import hsk1l09notes from '@/content/hsk1/lesson-09/notes.json';
 import hsk1l10lesson from '@/content/hsk1/lesson-10/lesson.json';
+import hsk1l10vocabulary from '@/content/hsk1/lesson-10/vocabulary.json';
+import hsk1l10notes from '@/content/hsk1/lesson-10/notes.json';
 import hsk1l11lesson from '@/content/hsk1/lesson-11/lesson.json';
+import hsk1l11vocabulary from '@/content/hsk1/lesson-11/vocabulary.json';
+import hsk1l11notes from '@/content/hsk1/lesson-11/notes.json';
 import hsk1l12lesson from '@/content/hsk1/lesson-12/lesson.json';
+import hsk1l12vocabulary from '@/content/hsk1/lesson-12/vocabulary.json';
+import hsk1l12notes from '@/content/hsk1/lesson-12/notes.json';
 import hsk1l13lesson from '@/content/hsk1/lesson-13/lesson.json';
+import hsk1l13vocabulary from '@/content/hsk1/lesson-13/vocabulary.json';
+import hsk1l13notes from '@/content/hsk1/lesson-13/notes.json';
 import hsk1l14lesson from '@/content/hsk1/lesson-14/lesson.json';
+import hsk1l14vocabulary from '@/content/hsk1/lesson-14/vocabulary.json';
+import hsk1l14notes from '@/content/hsk1/lesson-14/notes.json';
 import hsk1l15lesson from '@/content/hsk1/lesson-15/lesson.json';
+import hsk1l15vocabulary from '@/content/hsk1/lesson-15/vocabulary.json';
+import hsk1l15notes from '@/content/hsk1/lesson-15/notes.json';
 
 const REGISTRY = {
   'hsk1-l01': { lesson: hsk1l01lesson, vocabulary: hsk1l01vocabulary },
@@ -34,16 +54,16 @@ const REGISTRY = {
   'hsk1-l03': { lesson: hsk1l03lesson, vocabulary: hsk1l03vocabulary, notes: hsk1l03notes },
   'hsk1-l04': { lesson: hsk1l04lesson, vocabulary: hsk1l04vocabulary, notes: hsk1l04notes },
   'hsk1-l05': { lesson: hsk1l05lesson, vocabulary: hsk1l05vocabulary, notes: hsk1l05notes },
-  'hsk1-l06': { lesson: hsk1l06lesson },
-  'hsk1-l07': { lesson: hsk1l07lesson },
-  'hsk1-l08': { lesson: hsk1l08lesson },
-  'hsk1-l09': { lesson: hsk1l09lesson },
-  'hsk1-l10': { lesson: hsk1l10lesson },
-  'hsk1-l11': { lesson: hsk1l11lesson },
-  'hsk1-l12': { lesson: hsk1l12lesson },
-  'hsk1-l13': { lesson: hsk1l13lesson },
-  'hsk1-l14': { lesson: hsk1l14lesson },
-  'hsk1-l15': { lesson: hsk1l15lesson },
+  'hsk1-l06': { lesson: hsk1l06lesson, vocabulary: hsk1l06vocabulary, notes: hsk1l06notes },
+  'hsk1-l07': { lesson: hsk1l07lesson, vocabulary: hsk1l07vocabulary, notes: hsk1l07notes },
+  'hsk1-l08': { lesson: hsk1l08lesson, vocabulary: hsk1l08vocabulary, notes: hsk1l08notes },
+  'hsk1-l09': { lesson: hsk1l09lesson, vocabulary: hsk1l09vocabulary, notes: hsk1l09notes },
+  'hsk1-l10': { lesson: hsk1l10lesson, vocabulary: hsk1l10vocabulary, notes: hsk1l10notes },
+  'hsk1-l11': { lesson: hsk1l11lesson, vocabulary: hsk1l11vocabulary, notes: hsk1l11notes },
+  'hsk1-l12': { lesson: hsk1l12lesson, vocabulary: hsk1l12vocabulary, notes: hsk1l12notes },
+  'hsk1-l13': { lesson: hsk1l13lesson, vocabulary: hsk1l13vocabulary, notes: hsk1l13notes },
+  'hsk1-l14': { lesson: hsk1l14lesson, vocabulary: hsk1l14vocabulary, notes: hsk1l14notes },
+  'hsk1-l15': { lesson: hsk1l15lesson, vocabulary: hsk1l15vocabulary, notes: hsk1l15notes },
 };
 
 const SLUGS = [

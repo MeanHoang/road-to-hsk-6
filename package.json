@@ -8,7 +8,10 @@
     "build": "next build",
     "start": "next start",
     "gen": "node scripts/gen-bundled.mjs",
-    "test:pinyin": "node scripts/test-pinyin.mjs"
+    "test:pinyin": "node scripts/test-pinyin.mjs",
+    "test:srs": "node scripts/test-srs.mjs",
+    "seed": "node scripts/seed-hsk1.mjs",
+    "test": "node scripts/test-pinyin.mjs && node scripts/test-srs.mjs"
   },
   "dependencies": {
     "firebase": "^12.18.0",

@@ -1,16 +1,16 @@
 {
   "collection": "vocabulary",
-  "lesson": "hsk1-l03",
+  "lesson": "hsk1-l13",
   "title": "Từ vựng",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l03-v01",
+      "id": "h1l13-v01",
       "no": 1,
-      "word": "叫",
-      "pinyin": "jiào",
-      "pos": "động từ",
-      "meaningVi": "gọi, tên là",
+      "word": "喂",
+      "pinyin": "wèi",
+      "pos": "thán từ",
+      "meaningVi": "a lô",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -22,13 +22,13 @@
       }
     },
     {
-      "id": "h1l03-v02",
+      "id": "h1l13-v02",
       "no": 2,
-      "word": "什么",
-      "pinyin": "shénme",
-      "pos": "đại từ",
-      "meaningVi": "gì, cái gì",
-      "isOverSyllabus": false,
+      "word": "也",
+      "pinyin": "yě",
+      "pos": "phó từ",
+      "meaningVi": "cũng",
+      "isOverSyllabus": true,
       "image": null,
       "source": {
         "word": "pdf",
@@ -39,46 +39,12 @@
       }
     },
     {
-      "id": "h1l03-v03",
+      "id": "h1l13-v03",
       "no": 3,
-      "word": "名字",
-      "pinyin": "míngzi",
-      "pos": "danh từ",
-      "meaningVi": "tên",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v04",
-      "no": 4,
-      "word": "我",
-      "pinyin": "wǒ",
-      "pos": "đại từ",
-      "meaningVi": "tôi",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v05",
-      "no": 5,
-      "word": "是",
-      "pinyin": "shì",
+      "word": "学习",
+      "pinyin": "xuéxí",
       "pos": "động từ",
-      "meaningVi": "là",
+      "meaningVi": "học tập",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -90,12 +56,46 @@
       }
     },
     {
-      "id": "h1l03-v06",
+      "id": "h1l13-v04",
+      "no": 4,
+      "word": "上午",
+      "pinyin": "shàngwǔ",
+      "pos": "danh từ",
+      "meaningVi": "buổi sáng",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l13-v05",
+      "no": 5,
+      "word": "睡觉",
+      "pinyin": "shuìjiào",
+      "pos": "động từ",
+      "meaningVi": "ngủ",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l13-v06",
       "no": 6,
-      "word": "老师",
-      "pinyin": "lǎoshī",
+      "word": "电视",
+      "pinyin": "diànshì",
       "pos": "danh từ",
-      "meaningVi": "giáo viên",
+      "meaningVi": "tivi",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -107,12 +107,12 @@
       }
     },
     {
-      "id": "h1l03-v07",
+      "id": "h1l13-v07",
       "no": 7,
-      "word": "吗",
-      "pinyin": "ma",
-      "pos": "trợ từ",
-      "meaningVi": "không? (hỏi)",
+      "word": "喜欢",
+      "pinyin": "xǐhuan",
+      "pos": "động từ",
+      "meaningVi": "thích",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -124,13 +124,13 @@
       }
     },
     {
-      "id": "h1l03-v08",
+      "id": "h1l13-v08",
       "no": 8,
-      "word": "学生",
-      "pinyin": "xuésheng",
-      "pos": "danh từ",
-      "meaningVi": "học sinh",
-      "isOverSyllabus": false,
+      "word": "给",
+      "pinyin": "gěi",
+      "pos": "giới từ",
+      "meaningVi": "cho, gọi cho",
+      "isOverSyllabus": true,
       "image": null,
       "source": {
         "word": "pdf",
@@ -141,12 +141,12 @@
       }
     },
     {
-      "id": "h1l03-v09",
+      "id": "h1l13-v09",
       "no": 9,
-      "word": "人",
-      "pinyin": "rén",
-      "pos": "danh từ",
-      "meaningVi": "người",
+      "word": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "pos": "cụm động từ",
+      "meaningVi": "gọi điện thoại",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -158,13 +158,13 @@
       }
     },
     {
-      "id": "h1l03-v10",
+      "id": "h1l13-v10",
       "no": 10,
-      "word": "李月",
-      "pinyin": "Lǐ Yuè",
-      "pos": "tên riêng",
-      "meaningVi": "Lý Nguyệt",
-      "isOverSyllabus": false,
+      "word": "吧",
+      "pinyin": "ba",
+      "pos": "trợ từ",
+      "meaningVi": "nhé, đi",
+      "isOverSyllabus": true,
       "image": null,
       "source": {
         "word": "pdf",
@@ -175,29 +175,12 @@
       }
     },
     {
-      "id": "h1l03-v11",
+      "id": "h1l13-v11",
       "no": 11,
-      "word": "中国",
-      "pinyin": "Zhōngguó",
+      "word": "大卫",
+      "pinyin": "Dàwèi",
       "pos": "tên riêng",
-      "meaningVi": "Trung Quốc",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v12",
-      "no": 12,
-      "word": "美国",
-      "pinyin": "Měiguó",
-      "pos": "tên riêng",
-      "meaningVi": "Mỹ",
+      "meaningVi": "David",
       "isOverSyllabus": false,
       "image": null,
       "source": {

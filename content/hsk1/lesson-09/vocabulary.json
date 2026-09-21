@@ -1,16 +1,16 @@
 {
   "collection": "vocabulary",
-  "lesson": "hsk1-l03",
+  "lesson": "hsk1-l09",
   "title": "Từ vựng",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l03-v01",
+      "id": "h1l09-v01",
       "no": 1,
-      "word": "叫",
-      "pinyin": "jiào",
-      "pos": "động từ",
-      "meaningVi": "gọi, tên là",
+      "word": "小",
+      "pinyin": "xiǎo",
+      "pos": "tính từ",
+      "meaningVi": "nhỏ",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -22,12 +22,12 @@
       }
     },
     {
-      "id": "h1l03-v02",
+      "id": "h1l09-v02",
       "no": 2,
-      "word": "什么",
-      "pinyin": "shénme",
-      "pos": "đại từ",
-      "meaningVi": "gì, cái gì",
+      "word": "猫",
+      "pinyin": "māo",
+      "pos": "danh từ",
+      "meaningVi": "con mèo",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -39,46 +39,12 @@
       }
     },
     {
-      "id": "h1l03-v03",
+      "id": "h1l09-v03",
       "no": 3,
-      "word": "名字",
-      "pinyin": "míngzi",
-      "pos": "danh từ",
-      "meaningVi": "tên",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v04",
-      "no": 4,
-      "word": "我",
-      "pinyin": "wǒ",
-      "pos": "đại từ",
-      "meaningVi": "tôi",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v05",
-      "no": 5,
-      "word": "是",
-      "pinyin": "shì",
+      "word": "在",
+      "pinyin": "zài",
       "pos": "động từ",
-      "meaningVi": "là",
+      "meaningVi": "ở (tại)",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -90,12 +56,46 @@
       }
     },
     {
-      "id": "h1l03-v06",
+      "id": "h1l09-v04",
+      "no": 4,
+      "word": "那儿",
+      "pinyin": "nàr",
+      "pos": "đại từ",
+      "meaningVi": "ở kia",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l09-v05",
+      "no": 5,
+      "word": "狗",
+      "pinyin": "gǒu",
+      "pos": "danh từ",
+      "meaningVi": "con chó",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l09-v06",
       "no": 6,
-      "word": "老师",
-      "pinyin": "lǎoshī",
+      "word": "椅子",
+      "pinyin": "yǐzi",
       "pos": "danh từ",
-      "meaningVi": "giáo viên",
+      "meaningVi": "cái ghế",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -107,12 +107,12 @@
       }
     },
     {
-      "id": "h1l03-v07",
+      "id": "h1l09-v07",
       "no": 7,
-      "word": "吗",
-      "pinyin": "ma",
-      "pos": "trợ từ",
-      "meaningVi": "không? (hỏi)",
+      "word": "下面",
+      "pinyin": "xiàmiàn",
+      "pos": "danh từ",
+      "meaningVi": "phía dưới",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -124,12 +124,12 @@
       }
     },
     {
-      "id": "h1l03-v08",
+      "id": "h1l09-v08",
       "no": 8,
-      "word": "学生",
-      "pinyin": "xuésheng",
-      "pos": "danh từ",
-      "meaningVi": "học sinh",
+      "word": "在",
+      "pinyin": "zài",
+      "pos": "giới từ",
+      "meaningVi": "ở, tại",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -141,12 +141,12 @@
       }
     },
     {
-      "id": "h1l03-v09",
+      "id": "h1l09-v09",
       "no": 9,
-      "word": "人",
-      "pinyin": "rén",
-      "pos": "danh từ",
-      "meaningVi": "người",
+      "word": "哪儿",
+      "pinyin": "nǎr",
+      "pos": "đại từ",
+      "meaningVi": "ở đâu",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -158,12 +158,12 @@
       }
     },
     {
-      "id": "h1l03-v10",
+      "id": "h1l09-v10",
       "no": 10,
-      "word": "李月",
-      "pinyin": "Lǐ Yuè",
-      "pos": "tên riêng",
-      "meaningVi": "Lý Nguyệt",
+      "word": "工作",
+      "pinyin": "gōngzuò",
+      "pos": "động từ",
+      "meaningVi": "làm việc",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -175,12 +175,12 @@
       }
     },
     {
-      "id": "h1l03-v11",
+      "id": "h1l09-v11",
       "no": 11,
-      "word": "中国",
-      "pinyin": "Zhōngguó",
-      "pos": "tên riêng",
-      "meaningVi": "Trung Quốc",
+      "word": "儿子",
+      "pinyin": "érzi",
+      "pos": "danh từ",
+      "meaningVi": "con trai",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -192,12 +192,46 @@
       }
     },
     {
-      "id": "h1l03-v12",
+      "id": "h1l09-v12",
       "no": 12,
-      "word": "美国",
-      "pinyin": "Měiguó",
-      "pos": "tên riêng",
-      "meaningVi": "Mỹ",
+      "word": "医院",
+      "pinyin": "yīyuàn",
+      "pos": "danh từ",
+      "meaningVi": "bệnh viện",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l09-v13",
+      "no": 13,
+      "word": "医生",
+      "pinyin": "yīshēng",
+      "pos": "danh từ",
+      "meaningVi": "bác sĩ",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l09-v14",
+      "no": 14,
+      "word": "爸爸",
+      "pinyin": "bàba",
+      "pos": "danh từ",
+      "meaningVi": "bố",
       "isOverSyllabus": false,
       "image": null,
       "source": {

@@ -35,6 +35,10 @@ const TOOLS = [
   { key: 'vocab', path: 'vocab', label: 'Bảng từ vựng', needs: 'vocabulary' },
 ];
 
+// Phần nào đã dựng xong màn. Phần còn lại vẫn hiện trong danh sách nhưng không
+// bấm được — để biết bài có gì mà chưa làm tới, thay vì giấu đi.
+const BUILT = new Set(['notes', 'cards', 'tones', 'vocab']);
+
 /** Cấp 1-3 dùng bộ sơ cấp, cấp 4+ dùng bộ nâng cao. */
 export function sectionsForLevel(level) {
   return level <= 3 ? [...BASE, ...ELEMENTARY, ...TAIL] : [...BASE, ...ADVANCED, ...TAIL];
@@ -49,5 +53,9 @@ export function lessonActivities(lesson) {
   const all = [...sectionsForLevel(lesson?.level ?? 1), ...TOOLS];
   return all
     .filter((a) => have.includes(a.needs))
-    .map((a) => ({ ...a, href: `/lesson/${lesson.slug}/${a.path}` }));
+    .map((a) => ({
+      ...a,
+      built: BUILT.has(a.key),
+      href: BUILT.has(a.key) ? `/lesson/${lesson.slug}/${a.path}` : null,
+    }));
 }

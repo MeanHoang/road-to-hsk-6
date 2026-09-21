@@ -1,0 +1,47 @@
+{
+  "collection": "notes",
+  "lesson": "hsk1-l07",
+  "title": "Chú thích",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l07-n1",
+      "no": 1,
+      "titleZh": "日期的表达(1)：月、日/号、星期",
+      "titleVi": "Cách diễn tả ngày tháng (1): tháng, ngày, thứ",
+      "pattern": null,
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l07-n2",
+      "no": 2,
+      "titleZh": "名词谓语句",
+      "titleVi": "Câu có vị ngữ là danh từ",
+      "pattern": "S + N (thời gian/tuổi/giá)",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l07-n3",
+      "no": 3,
+      "titleZh": "连动句(1)",
+      "titleVi": "Câu liên động từ (1)",
+      "pattern": "去 + nơi chốn + làm gì",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    }
+  ]
+}

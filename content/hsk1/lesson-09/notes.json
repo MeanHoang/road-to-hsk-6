@@ -1,15 +1,15 @@
 {
   "collection": "notes",
-  "lesson": "hsk1-l05",
+  "lesson": "hsk1-l09",
   "title": "Chú thích",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l05-n1",
+      "id": "h1l09-n1",
       "no": 1,
-      "titleZh": "疑问代词“几”",
-      "titleVi": "Đại từ nghi vấn 几",
-      "pattern": "几 + lượng từ + N?",
+      "titleZh": "动词“在”",
+      "titleVi": "Động từ 在",
+      "pattern": "S + 在 + nơi chốn",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -18,11 +18,11 @@
       }
     },
     {
-      "id": "h1l05-n2",
+      "id": "h1l09-n2",
       "no": 2,
-      "titleZh": "百以内的数字",
-      "titleVi": "Các số dưới 100",
-      "pattern": null,
+      "titleZh": "疑问代词“哪儿”",
+      "titleVi": "Đại từ nghi vấn 哪儿",
+      "pattern": "S + 在 + 哪儿?",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -31,11 +31,11 @@
       }
     },
     {
-      "id": "h1l05-n3",
+      "id": "h1l09-n3",
       "no": 3,
-      "titleZh": "“了”表变化",
-      "titleVi": "Trợ từ chỉ sự thay đổi 了",
-      "pattern": "… + 了",
+      "titleZh": "介词“在”",
+      "titleVi": "Giới từ 在",
+      "pattern": "S + 在 + nơi chốn + V",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -44,11 +44,11 @@
       }
     },
     {
-      "id": "h1l05-n4",
+      "id": "h1l09-n4",
       "no": 4,
-      "titleZh": "“多+大”表示疑问",
-      "titleVi": "Câu hỏi dùng 多 + 大",
-      "pattern": "N + 多大?",
+      "titleZh": "疑问助词“呢”(2)",
+      "titleVi": "Trợ từ nghi vấn 呢 (2)",
+      "pattern": "S + 呢?",
       "examples": [],
       "source": {
         "titleZh": "pdf",

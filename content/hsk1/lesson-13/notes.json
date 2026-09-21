@@ -1,27 +1,14 @@
 {
   "collection": "notes",
-  "lesson": "hsk1-l05",
+  "lesson": "hsk1-l13",
   "title": "Chú thích",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l05-n1",
+      "id": "h1l13-n1",
       "no": 1,
-      "titleZh": "疑问代词“几”",
-      "titleVi": "Đại từ nghi vấn 几",
-      "pattern": "几 + lượng từ + N?",
-      "examples": [],
-      "source": {
-        "titleZh": "pdf",
-        "titleVi": "ai",
-        "pattern": "ai"
-      }
-    },
-    {
-      "id": "h1l05-n2",
-      "no": 2,
-      "titleZh": "百以内的数字",
-      "titleVi": "Các số dưới 100",
+      "titleZh": "叹词“喂”",
+      "titleVi": "Từ cảm thán 喂",
       "pattern": null,
       "examples": [],
       "source": {
@@ -31,11 +18,11 @@
       }
     },
     {
-      "id": "h1l05-n3",
-      "no": 3,
-      "titleZh": "“了”表变化",
-      "titleVi": "Trợ từ chỉ sự thay đổi 了",
-      "pattern": "… + 了",
+      "id": "h1l13-n2",
+      "no": 2,
+      "titleZh": "“在……呢”表示动作正在进行",
+      "titleVi": "在…呢 diễn tả hành động đang diễn ra",
+      "pattern": "S + 在 + V + 呢",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -44,11 +31,24 @@
       }
     },
     {
-      "id": "h1l05-n4",
+      "id": "h1l13-n3",
+      "no": 3,
+      "titleZh": "电话号码的表达",
+      "titleVi": "Cách đọc số điện thoại",
+      "pattern": null,
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l13-n4",
       "no": 4,
-      "titleZh": "“多+大”表示疑问",
-      "titleVi": "Câu hỏi dùng 多 + 大",
-      "pattern": "N + 多大?",
+      "titleZh": "语气助词“吧”",
+      "titleVi": "Trợ từ ngữ khí 吧",
+      "pattern": "… + 吧",
       "examples": [],
       "source": {
         "titleZh": "pdf",

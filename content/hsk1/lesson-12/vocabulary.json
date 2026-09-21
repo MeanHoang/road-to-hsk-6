@@ -1,16 +1,16 @@
 {
   "collection": "vocabulary",
-  "lesson": "hsk1-l03",
+  "lesson": "hsk1-l12",
   "title": "Từ vựng",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l03-v01",
+      "id": "h1l12-v01",
       "no": 1,
-      "word": "叫",
-      "pinyin": "jiào",
-      "pos": "động từ",
-      "meaningVi": "gọi, tên là",
+      "word": "天气",
+      "pinyin": "tiānqì",
+      "pos": "danh từ",
+      "meaningVi": "thời tiết",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -22,12 +22,12 @@
       }
     },
     {
-      "id": "h1l03-v02",
+      "id": "h1l12-v02",
       "no": 2,
-      "word": "什么",
-      "pinyin": "shénme",
+      "word": "怎么样",
+      "pinyin": "zěnmeyàng",
       "pos": "đại từ",
-      "meaningVi": "gì, cái gì",
+      "meaningVi": "thế nào",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -39,12 +39,12 @@
       }
     },
     {
-      "id": "h1l03-v03",
+      "id": "h1l12-v03",
       "no": 3,
-      "word": "名字",
-      "pinyin": "míngzi",
-      "pos": "danh từ",
-      "meaningVi": "tên",
+      "word": "太",
+      "pinyin": "tài",
+      "pos": "phó từ",
+      "meaningVi": "quá",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -56,12 +56,12 @@
       }
     },
     {
-      "id": "h1l03-v04",
+      "id": "h1l12-v04",
       "no": 4,
-      "word": "我",
-      "pinyin": "wǒ",
-      "pos": "đại từ",
-      "meaningVi": "tôi",
+      "word": "热",
+      "pinyin": "rè",
+      "pos": "tính từ",
+      "meaningVi": "nóng",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -73,12 +73,12 @@
       }
     },
     {
-      "id": "h1l03-v05",
+      "id": "h1l12-v05",
       "no": 5,
-      "word": "是",
-      "pinyin": "shì",
-      "pos": "động từ",
-      "meaningVi": "là",
+      "word": "冷",
+      "pinyin": "lěng",
+      "pos": "tính từ",
+      "meaningVi": "lạnh",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -90,12 +90,12 @@
       }
     },
     {
-      "id": "h1l03-v06",
+      "id": "h1l12-v06",
       "no": 6,
-      "word": "老师",
-      "pinyin": "lǎoshī",
-      "pos": "danh từ",
-      "meaningVi": "giáo viên",
+      "word": "下雨",
+      "pinyin": "xiàyǔ",
+      "pos": "động từ",
+      "meaningVi": "mưa",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -107,12 +107,12 @@
       }
     },
     {
-      "id": "h1l03-v07",
+      "id": "h1l12-v07",
       "no": 7,
-      "word": "吗",
-      "pinyin": "ma",
-      "pos": "trợ từ",
-      "meaningVi": "không? (hỏi)",
+      "word": "小姐",
+      "pinyin": "xiǎojiě",
+      "pos": "danh từ",
+      "meaningVi": "cô, tiểu thư",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -124,12 +124,12 @@
       }
     },
     {
-      "id": "h1l03-v08",
+      "id": "h1l12-v08",
       "no": 8,
-      "word": "学生",
-      "pinyin": "xuésheng",
-      "pos": "danh từ",
-      "meaningVi": "học sinh",
+      "word": "来",
+      "pinyin": "lái",
+      "pos": "động từ",
+      "meaningVi": "đến",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -141,13 +141,13 @@
       }
     },
     {
-      "id": "h1l03-v09",
+      "id": "h1l12-v09",
       "no": 9,
-      "word": "人",
-      "pinyin": "rén",
+      "word": "身体",
+      "pinyin": "shēntǐ",
       "pos": "danh từ",
-      "meaningVi": "người",
-      "isOverSyllabus": false,
+      "meaningVi": "sức khoẻ, cơ thể",
+      "isOverSyllabus": true,
       "image": null,
       "source": {
         "word": "pdf",
@@ -158,12 +158,12 @@
       }
     },
     {
-      "id": "h1l03-v10",
+      "id": "h1l12-v10",
       "no": 10,
-      "word": "李月",
-      "pinyin": "Lǐ Yuè",
-      "pos": "tên riêng",
-      "meaningVi": "Lý Nguyệt",
+      "word": "爱",
+      "pinyin": "ài",
+      "pos": "động từ",
+      "meaningVi": "yêu, thích",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -175,12 +175,12 @@
       }
     },
     {
-      "id": "h1l03-v11",
+      "id": "h1l12-v11",
       "no": 11,
-      "word": "中国",
-      "pinyin": "Zhōngguó",
-      "pos": "tên riêng",
-      "meaningVi": "Trung Quốc",
+      "word": "些",
+      "pinyin": "xiē",
+      "pos": "lượng từ",
+      "meaningVi": "một ít",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -192,12 +192,29 @@
       }
     },
     {
-      "id": "h1l03-v12",
+      "id": "h1l12-v12",
       "no": 12,
-      "word": "美国",
-      "pinyin": "Měiguó",
-      "pos": "tên riêng",
-      "meaningVi": "Mỹ",
+      "word": "水果",
+      "pinyin": "shuǐguǒ",
+      "pos": "danh từ",
+      "meaningVi": "hoa quả",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l12-v13",
+      "no": 13,
+      "word": "水",
+      "pinyin": "shuǐ",
+      "pos": "danh từ",
+      "meaningVi": "nước",
       "isOverSyllabus": false,
       "image": null,
       "source": {

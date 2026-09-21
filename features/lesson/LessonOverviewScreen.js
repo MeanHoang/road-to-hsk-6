@@ -30,14 +30,23 @@ export function LessonOverviewScreen({ lesson }) {
           </p>
         )}
         <ul className="section-list">
-          {sections.map((a) => (
-            <li key={a.key}>
-              <Link className="section-card" href={a.href}>
-                <span className="section-card__zh">{a.zh}</span>
-                <span className="section-card__label">{a.label}</span>
-              </Link>
-            </li>
-          ))}
+          {sections.map((a) =>
+            a.built ? (
+              <li key={a.key}>
+                <Link className="section-card" href={a.href}>
+                  <span className="section-card__zh">{a.zh}</span>
+                  <span className="section-card__label">{a.label}</span>
+                </Link>
+              </li>
+            ) : (
+              <li key={a.key}>
+                <span className="section-card is-todo" title="Chưa dựng màn này">
+                  <span className="section-card__zh">{a.zh}</span>
+                  <span className="section-card__label">{a.label}</span>
+                </span>
+              </li>
+            ),
+          )}
         </ul>
       </section>
 

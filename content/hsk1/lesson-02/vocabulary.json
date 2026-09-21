@@ -15,9 +15,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -31,9 +32,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -47,9 +49,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     },
     {
@@ -63,9 +66,10 @@
       "image": null,
       "source": {
         "word": "pdf",
+        "isOverSyllabus": "pdf",
         "pinyin": "ai",
-        "meaningVi": "ai",
-        "isOverSyllabus": "pdf"
+        "pos": "ai",
+        "meaningVi": "ai"
       }
     }
   ]

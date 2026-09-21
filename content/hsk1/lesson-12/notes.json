@@ -1,15 +1,15 @@
 {
   "collection": "notes",
-  "lesson": "hsk1-l05",
+  "lesson": "hsk1-l12",
   "title": "Chú thích",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l05-n1",
+      "id": "h1l12-n1",
       "no": 1,
-      "titleZh": "疑问代词“几”",
-      "titleVi": "Đại từ nghi vấn 几",
-      "pattern": "几 + lượng từ + N?",
+      "titleZh": "疑问代词“怎么样”",
+      "titleVi": "Đại từ nghi vấn 怎么样",
+      "pattern": "S + 怎么样?",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -18,11 +18,11 @@
       }
     },
     {
-      "id": "h1l05-n2",
+      "id": "h1l12-n2",
       "no": 2,
-      "titleZh": "百以内的数字",
-      "titleVi": "Các số dưới 100",
-      "pattern": null,
+      "titleZh": "主谓谓语句",
+      "titleVi": "Câu có vị ngữ là kết cấu chủ-vị",
+      "pattern": "S1 + (S2 + V)",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -31,11 +31,11 @@
       }
     },
     {
-      "id": "h1l05-n3",
+      "id": "h1l12-n3",
       "no": 3,
-      "titleZh": "“了”表变化",
-      "titleVi": "Trợ từ chỉ sự thay đổi 了",
-      "pattern": "… + 了",
+      "titleZh": "程度副词“太”",
+      "titleVi": "Phó từ chỉ mức độ 太",
+      "pattern": "太 + Adj + 了",
       "examples": [],
       "source": {
         "titleZh": "pdf",
@@ -44,11 +44,11 @@
       }
     },
     {
-      "id": "h1l05-n4",
+      "id": "h1l12-n4",
       "no": 4,
-      "titleZh": "“多+大”表示疑问",
-      "titleVi": "Câu hỏi dùng 多 + 大",
-      "pattern": "N + 多大?",
+      "titleZh": "能愿动词“会”(2)",
+      "titleVi": "Động từ năng nguyện 会 (2)",
+      "pattern": "S + 会 + V (khả năng xảy ra)",
       "examples": [],
       "source": {
         "titleZh": "pdf",

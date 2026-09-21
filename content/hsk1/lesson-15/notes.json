@@ -1,0 +1,34 @@
+{
+  "collection": "notes",
+  "lesson": "hsk1-l15",
+  "title": "Chú thích",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l15-n1",
+      "no": 1,
+      "titleZh": "“是……的”句",
+      "titleVi": "Câu có cấu trúc 是…的: nhấn mạnh thời gian, địa điểm, cách thức",
+      "pattern": "S + 是 + … + V + 的",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l15-n2",
+      "no": 2,
+      "titleZh": "日期的表达(2)",
+      "titleVi": "Cách diễn tả ngày tháng (2): năm, tháng, ngày, thứ",
+      "pattern": null,
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    }
+  ]
+}

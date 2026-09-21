@@ -1,16 +1,16 @@
 {
   "collection": "vocabulary",
-  "lesson": "hsk1-l04",
+  "lesson": "hsk1-l15",
   "title": "Từ vựng",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l04-v01",
+      "id": "h1l15-v01",
       "no": 1,
-      "word": "她",
-      "pinyin": "tā",
-      "pos": "đại từ",
-      "meaningVi": "cô ấy",
+      "word": "认识",
+      "pinyin": "rènshi",
+      "pos": "động từ",
+      "meaningVi": "quen biết",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -22,12 +22,12 @@
       }
     },
     {
-      "id": "h1l04-v02",
+      "id": "h1l15-v02",
       "no": 2,
-      "word": "谁",
-      "pinyin": "shéi",
-      "pos": "đại từ",
-      "meaningVi": "ai",
+      "word": "年",
+      "pinyin": "nián",
+      "pos": "danh từ",
+      "meaningVi": "năm",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -39,12 +39,12 @@
       }
     },
     {
-      "id": "h1l04-v03",
+      "id": "h1l15-v03",
       "no": 3,
-      "word": "的",
-      "pinyin": "de",
-      "pos": "trợ từ",
-      "meaningVi": "của",
+      "word": "大学",
+      "pinyin": "dàxué",
+      "pos": "danh từ",
+      "meaningVi": "đại học",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -56,12 +56,12 @@
       }
     },
     {
-      "id": "h1l04-v04",
+      "id": "h1l15-v04",
       "no": 4,
-      "word": "汉语",
-      "pinyin": "Hànyǔ",
+      "word": "饭店",
+      "pinyin": "fàndiàn",
       "pos": "danh từ",
-      "meaningVi": "tiếng Hán",
+      "meaningVi": "khách sạn, nhà hàng",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -73,12 +73,12 @@
       }
     },
     {
-      "id": "h1l04-v05",
+      "id": "h1l15-v05",
       "no": 5,
-      "word": "哪",
-      "pinyin": "nǎ",
-      "pos": "đại từ",
-      "meaningVi": "nào",
+      "word": "出租车",
+      "pinyin": "chūzūchē",
+      "pos": "danh từ",
+      "meaningVi": "taxi",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -90,13 +90,13 @@
       }
     },
     {
-      "id": "h1l04-v06",
+      "id": "h1l15-v06",
       "no": 6,
-      "word": "国",
-      "pinyin": "guó",
-      "pos": "danh từ",
-      "meaningVi": "nước, quốc gia",
-      "isOverSyllabus": false,
+      "word": "一起",
+      "pinyin": "yìqǐ",
+      "pos": "phó từ",
+      "meaningVi": "cùng nhau",
+      "isOverSyllabus": true,
       "image": null,
       "source": {
         "word": "pdf",
@@ -107,12 +107,12 @@
       }
     },
     {
-      "id": "h1l04-v07",
+      "id": "h1l15-v07",
       "no": 7,
-      "word": "呢",
-      "pinyin": "ne",
-      "pos": "trợ từ",
-      "meaningVi": "thì sao? (hỏi)",
+      "word": "高兴",
+      "pinyin": "gāoxìng",
+      "pos": "tính từ",
+      "meaningVi": "vui",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -124,12 +124,12 @@
       }
     },
     {
-      "id": "h1l04-v08",
+      "id": "h1l15-v08",
       "no": 8,
-      "word": "他",
-      "pinyin": "tā",
-      "pos": "đại từ",
-      "meaningVi": "anh ấy",
+      "word": "听",
+      "pinyin": "tīng",
+      "pos": "động từ",
+      "meaningVi": "nghe",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -141,29 +141,12 @@
       }
     },
     {
-      "id": "h1l04-v09",
+      "id": "h1l15-v09",
       "no": 9,
-      "word": "同学",
-      "pinyin": "tóngxué",
+      "word": "飞机",
+      "pinyin": "fēijī",
       "pos": "danh từ",
-      "meaningVi": "bạn học",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l04-v10",
-      "no": 10,
-      "word": "朋友",
-      "pinyin": "péngyou",
-      "pos": "danh từ",
-      "meaningVi": "bạn bè",
+      "meaningVi": "máy bay",
       "isOverSyllabus": false,
       "image": null,
       "source": {

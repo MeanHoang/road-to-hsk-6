@@ -1,0 +1,47 @@
+{
+  "collection": "notes",
+  "lesson": "hsk1-l11",
+  "title": "Chú thích",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l11-n1",
+      "no": 1,
+      "titleZh": "时间的表达",
+      "titleVi": "Cách diễn tả thời gian",
+      "pattern": "số + 点 + số + 分",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l11-n2",
+      "no": 2,
+      "titleZh": "时间词做状语",
+      "titleVi": "Từ chỉ thời gian làm trạng ngữ",
+      "pattern": "S + thời gian + V",
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    },
+    {
+      "id": "h1l11-n3",
+      "no": 3,
+      "titleZh": "名词“前”",
+      "titleVi": "Danh từ 前",
+      "pattern": null,
+      "examples": [],
+      "source": {
+        "titleZh": "pdf",
+        "titleVi": "ai",
+        "pattern": "ai"
+      }
+    }
+  ]
+}

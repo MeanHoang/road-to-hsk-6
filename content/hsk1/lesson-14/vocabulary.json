@@ -1,0 +1,297 @@
+{
+  "collection": "vocabulary",
+  "lesson": "hsk1-l14",
+  "title": "Từ vựng",
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "h1l14-v01",
+      "no": 1,
+      "word": "东西",
+      "pinyin": "dōngxi",
+      "pos": "danh từ",
+      "meaningVi": "đồ vật",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v02",
+      "no": 2,
+      "word": "一点儿",
+      "pinyin": "yìdiǎnr",
+      "pos": "lượng từ",
+      "meaningVi": "một chút",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v03",
+      "no": 3,
+      "word": "苹果",
+      "pinyin": "píngguǒ",
+      "pos": "danh từ",
+      "meaningVi": "quả táo",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v04",
+      "no": 4,
+      "word": "看见",
+      "pinyin": "kànjiàn",
+      "pos": "động từ",
+      "meaningVi": "nhìn thấy",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v05",
+      "no": 5,
+      "word": "先生",
+      "pinyin": "xiānsheng",
+      "pos": "danh từ",
+      "meaningVi": "ông, ngài",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v06",
+      "no": 6,
+      "word": "开",
+      "pinyin": "kāi",
+      "pos": "động từ",
+      "meaningVi": "lái, mở",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v07",
+      "no": 7,
+      "word": "车",
+      "pinyin": "chē",
+      "pos": "danh từ",
+      "meaningVi": "xe",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v08",
+      "no": 8,
+      "word": "回来",
+      "pinyin": "huílái",
+      "pos": "động từ",
+      "meaningVi": "trở về",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v09",
+      "no": 9,
+      "word": "分钟",
+      "pinyin": "fēnzhōng",
+      "pos": "danh từ",
+      "meaningVi": "phút",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v10",
+      "no": 10,
+      "word": "后",
+      "pinyin": "hòu",
+      "pos": "danh từ",
+      "meaningVi": "sau",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v11",
+      "no": 11,
+      "word": "衣服",
+      "pinyin": "yīfu",
+      "pos": "danh từ",
+      "meaningVi": "quần áo",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v12",
+      "no": 12,
+      "word": "漂亮",
+      "pinyin": "piàoliang",
+      "pos": "tính từ",
+      "meaningVi": "đẹp",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v13",
+      "no": 13,
+      "word": "啊",
+      "pinyin": "a",
+      "pos": "trợ từ",
+      "meaningVi": "a, à",
+      "isOverSyllabus": true,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v14",
+      "no": 14,
+      "word": "少",
+      "pinyin": "shǎo",
+      "pos": "tính từ",
+      "meaningVi": "ít",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v15",
+      "no": 15,
+      "word": "这些",
+      "pinyin": "zhèxiē",
+      "pos": "đại từ",
+      "meaningVi": "những cái này",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v16",
+      "no": 16,
+      "word": "都",
+      "pinyin": "dōu",
+      "pos": "phó từ",
+      "meaningVi": "đều",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l14-v17",
+      "no": 17,
+      "word": "张",
+      "pinyin": "Zhāng",
+      "pos": "tên riêng",
+      "meaningVi": "Trương",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    }
+  ]
+}

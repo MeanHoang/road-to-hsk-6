@@ -1,16 +1,16 @@
 {
   "collection": "vocabulary",
-  "lesson": "hsk1-l03",
+  "lesson": "hsk1-l11",
   "title": "Từ vựng",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l03-v01",
+      "id": "h1l11-v01",
       "no": 1,
-      "word": "叫",
-      "pinyin": "jiào",
-      "pos": "động từ",
-      "meaningVi": "gọi, tên là",
+      "word": "现在",
+      "pinyin": "xiànzài",
+      "pos": "danh từ",
+      "meaningVi": "bây giờ",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -22,12 +22,12 @@
       }
     },
     {
-      "id": "h1l03-v02",
+      "id": "h1l11-v02",
       "no": 2,
-      "word": "什么",
-      "pinyin": "shénme",
-      "pos": "đại từ",
-      "meaningVi": "gì, cái gì",
+      "word": "点",
+      "pinyin": "diǎn",
+      "pos": "lượng từ",
+      "meaningVi": "giờ",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -39,12 +39,12 @@
       }
     },
     {
-      "id": "h1l03-v03",
+      "id": "h1l11-v03",
       "no": 3,
-      "word": "名字",
-      "pinyin": "míngzi",
-      "pos": "danh từ",
-      "meaningVi": "tên",
+      "word": "分",
+      "pinyin": "fēn",
+      "pos": "lượng từ",
+      "meaningVi": "phút",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -56,12 +56,12 @@
       }
     },
     {
-      "id": "h1l03-v04",
+      "id": "h1l11-v04",
       "no": 4,
-      "word": "我",
-      "pinyin": "wǒ",
-      "pos": "đại từ",
-      "meaningVi": "tôi",
+      "word": "中午",
+      "pinyin": "zhōngwǔ",
+      "pos": "danh từ",
+      "meaningVi": "buổi trưa",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -73,12 +73,12 @@
       }
     },
     {
-      "id": "h1l03-v05",
+      "id": "h1l11-v05",
       "no": 5,
-      "word": "是",
-      "pinyin": "shì",
+      "word": "吃饭",
+      "pinyin": "chīfàn",
       "pos": "động từ",
-      "meaningVi": "là",
+      "meaningVi": "ăn cơm",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -90,12 +90,12 @@
       }
     },
     {
-      "id": "h1l03-v06",
+      "id": "h1l11-v06",
       "no": 6,
-      "word": "老师",
-      "pinyin": "lǎoshī",
+      "word": "时候",
+      "pinyin": "shíhou",
       "pos": "danh từ",
-      "meaningVi": "giáo viên",
+      "meaningVi": "lúc, khi",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -107,12 +107,12 @@
       }
     },
     {
-      "id": "h1l03-v07",
+      "id": "h1l11-v07",
       "no": 7,
-      "word": "吗",
-      "pinyin": "ma",
-      "pos": "trợ từ",
-      "meaningVi": "không? (hỏi)",
+      "word": "回",
+      "pinyin": "huí",
+      "pos": "động từ",
+      "meaningVi": "về, trở lại",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -124,12 +124,12 @@
       }
     },
     {
-      "id": "h1l03-v08",
+      "id": "h1l11-v08",
       "no": 8,
-      "word": "学生",
-      "pinyin": "xuésheng",
-      "pos": "danh từ",
-      "meaningVi": "học sinh",
+      "word": "我们",
+      "pinyin": "wǒmen",
+      "pos": "đại từ",
+      "meaningVi": "chúng tôi",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -141,12 +141,12 @@
       }
     },
     {
-      "id": "h1l03-v09",
+      "id": "h1l11-v09",
       "no": 9,
-      "word": "人",
-      "pinyin": "rén",
+      "word": "电影",
+      "pinyin": "diànyǐng",
       "pos": "danh từ",
-      "meaningVi": "người",
+      "meaningVi": "phim",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -158,12 +158,12 @@
       }
     },
     {
-      "id": "h1l03-v10",
+      "id": "h1l11-v10",
       "no": 10,
-      "word": "李月",
-      "pinyin": "Lǐ Yuè",
-      "pos": "tên riêng",
-      "meaningVi": "Lý Nguyệt",
+      "word": "住",
+      "pinyin": "zhù",
+      "pos": "động từ",
+      "meaningVi": "ở, sống",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -175,12 +175,12 @@
       }
     },
     {
-      "id": "h1l03-v11",
+      "id": "h1l11-v11",
       "no": 11,
-      "word": "中国",
-      "pinyin": "Zhōngguó",
-      "pos": "tên riêng",
-      "meaningVi": "Trung Quốc",
+      "word": "前",
+      "pinyin": "qián",
+      "pos": "danh từ",
+      "meaningVi": "trước",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -192,12 +192,12 @@
       }
     },
     {
-      "id": "h1l03-v12",
+      "id": "h1l11-v12",
       "no": 12,
-      "word": "美国",
-      "pinyin": "Měiguó",
+      "word": "北京",
+      "pinyin": "Běijīng",
       "pos": "tên riêng",
-      "meaningVi": "Mỹ",
+      "meaningVi": "Bắc Kinh",
       "isOverSyllabus": false,
       "image": null,
       "source": {

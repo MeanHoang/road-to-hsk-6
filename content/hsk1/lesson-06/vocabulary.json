@@ -1,16 +1,16 @@
 {
   "collection": "vocabulary",
-  "lesson": "hsk1-l03",
+  "lesson": "hsk1-l06",
   "title": "Từ vựng",
   "schemaVersion": 1,
   "items": [
     {
-      "id": "h1l03-v01",
+      "id": "h1l06-v01",
       "no": 1,
-      "word": "叫",
-      "pinyin": "jiào",
-      "pos": "động từ",
-      "meaningVi": "gọi, tên là",
+      "word": "会",
+      "pinyin": "huì",
+      "pos": "động từ năng nguyện",
+      "meaningVi": "biết (làm gì)",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -22,63 +22,12 @@
       }
     },
     {
-      "id": "h1l03-v02",
+      "id": "h1l06-v02",
       "no": 2,
-      "word": "什么",
-      "pinyin": "shénme",
-      "pos": "đại từ",
-      "meaningVi": "gì, cái gì",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v03",
-      "no": 3,
-      "word": "名字",
-      "pinyin": "míngzi",
-      "pos": "danh từ",
-      "meaningVi": "tên",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v04",
-      "no": 4,
-      "word": "我",
-      "pinyin": "wǒ",
-      "pos": "đại từ",
-      "meaningVi": "tôi",
-      "isOverSyllabus": false,
-      "image": null,
-      "source": {
-        "word": "pdf",
-        "isOverSyllabus": "pdf",
-        "pinyin": "ai",
-        "pos": "ai",
-        "meaningVi": "ai"
-      }
-    },
-    {
-      "id": "h1l03-v05",
-      "no": 5,
-      "word": "是",
-      "pinyin": "shì",
+      "word": "说",
+      "pinyin": "shuō",
       "pos": "động từ",
-      "meaningVi": "là",
+      "meaningVi": "nói",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -90,13 +39,64 @@
       }
     },
     {
-      "id": "h1l03-v06",
+      "id": "h1l06-v03",
+      "no": 3,
+      "word": "妈妈",
+      "pinyin": "māma",
+      "pos": "danh từ",
+      "meaningVi": "mẹ",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l06-v04",
+      "no": 4,
+      "word": "菜",
+      "pinyin": "cài",
+      "pos": "danh từ",
+      "meaningVi": "món ăn, rau",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l06-v05",
+      "no": 5,
+      "word": "很",
+      "pinyin": "hěn",
+      "pos": "phó từ",
+      "meaningVi": "rất",
+      "isOverSyllabus": false,
+      "image": null,
+      "source": {
+        "word": "pdf",
+        "isOverSyllabus": "pdf",
+        "pinyin": "ai",
+        "pos": "ai",
+        "meaningVi": "ai"
+      }
+    },
+    {
+      "id": "h1l06-v06",
       "no": 6,
-      "word": "老师",
-      "pinyin": "lǎoshī",
-      "pos": "danh từ",
-      "meaningVi": "giáo viên",
-      "isOverSyllabus": false,
+      "word": "好吃",
+      "pinyin": "hǎochī",
+      "pos": "tính từ",
+      "meaningVi": "ngon",
+      "isOverSyllabus": true,
       "image": null,
       "source": {
         "word": "pdf",
@@ -107,12 +107,12 @@
       }
     },
     {
-      "id": "h1l03-v07",
+      "id": "h1l06-v07",
       "no": 7,
-      "word": "吗",
-      "pinyin": "ma",
-      "pos": "trợ từ",
-      "meaningVi": "không? (hỏi)",
+      "word": "做",
+      "pinyin": "zuò",
+      "pos": "động từ",
+      "meaningVi": "làm, nấu",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -124,12 +124,12 @@
       }
     },
     {
-      "id": "h1l03-v08",
+      "id": "h1l06-v08",
       "no": 8,
-      "word": "学生",
-      "pinyin": "xuésheng",
-      "pos": "danh từ",
-      "meaningVi": "học sinh",
+      "word": "写",
+      "pinyin": "xiě",
+      "pos": "động từ",
+      "meaningVi": "viết",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -141,12 +141,12 @@
       }
     },
     {
-      "id": "h1l03-v09",
+      "id": "h1l06-v09",
       "no": 9,
-      "word": "人",
-      "pinyin": "rén",
+      "word": "汉字",
+      "pinyin": "Hànzì",
       "pos": "danh từ",
-      "meaningVi": "người",
+      "meaningVi": "chữ Hán",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -158,12 +158,12 @@
       }
     },
     {
-      "id": "h1l03-v10",
+      "id": "h1l06-v10",
       "no": 10,
-      "word": "李月",
-      "pinyin": "Lǐ Yuè",
-      "pos": "tên riêng",
-      "meaningVi": "Lý Nguyệt",
+      "word": "字",
+      "pinyin": "zì",
+      "pos": "danh từ",
+      "meaningVi": "chữ",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -175,12 +175,12 @@
       }
     },
     {
-      "id": "h1l03-v11",
+      "id": "h1l06-v11",
       "no": 11,
-      "word": "中国",
-      "pinyin": "Zhōngguó",
-      "pos": "tên riêng",
-      "meaningVi": "Trung Quốc",
+      "word": "怎么",
+      "pinyin": "zěnme",
+      "pos": "đại từ",
+      "meaningVi": "thế nào, làm sao",
       "isOverSyllabus": false,
       "image": null,
       "source": {
@@ -192,12 +192,12 @@
       }
     },
     {
-      "id": "h1l03-v12",
+      "id": "h1l06-v12",
       "no": 12,
-      "word": "美国",
-      "pinyin": "Měiguó",
-      "pos": "tên riêng",
-      "meaningVi": "Mỹ",
+      "word": "读",
+      "pinyin": "dú",
+      "pos": "động từ",
+      "meaningVi": "đọc",
       "isOverSyllabus": false,
       "image": null,
       "source": {

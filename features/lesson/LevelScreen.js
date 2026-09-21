@@ -27,6 +27,19 @@ export function LevelScreen({ slug }) {
         <p className="focus">Trọng tâm: {level.grammarFocus}</p>
       </header>
 
+      <ul className="tool-list">
+        <li>
+          <Link className="tool-card" href={`/level/${level.slug}/review`}>
+            Ôn cả cấp ({lessons.reduce((n, l) => n + l.vocabulary.length, 0)} từ)
+          </Link>
+        </li>
+        <li>
+          <Link className="tool-card" href={`/level/${level.slug}/tones`}>
+            Luyện thanh điệu cả cấp
+          </Link>
+        </li>
+      </ul>
+
       {level.volumes.map((vol) => {
         const inVolume = lessons.filter((l) => l.volume === vol.id);
         return (
