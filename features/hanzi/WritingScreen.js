@@ -76,19 +76,19 @@ export function WritingScreen({ level, words, backHref, title }) {
     };
   }, [current, mode, update]);
 
-  if (!ready) return <main className="page"><p className="muted">Đang tải…</p></main>;
+  if (!ready) return <><p className="muted">Đang tải…</p></>;
 
   if (chars.length === 0) {
     return (
-      <main className="page">
+      <>
         <Link className="back" href={backHref}>← {title}</Link>
         <p className="notice">Bài này không có chữ đơn nào để luyện viết.</p>
-      </main>
+      </>
     );
   }
 
   return (
-    <main className="page">
+    <>
       <header className="page-head">
         <Link className="back" href={backHref}>← {title}</Link>
         <h1>Luyện viết chữ Hán</h1>
@@ -133,6 +133,6 @@ export function WritingScreen({ level, words, backHref, title }) {
         💭 Sách cấp 1 chỉ bắt <strong>viết được</strong> 17 nét cơ bản và 52 chữ độc thể; các chữ
         khác chỉ cần nhận mặt. Dữ liệu nét lấy từ hanzi-writer (MIT).
       </p>
-    </main>
+    </>
   );
 }

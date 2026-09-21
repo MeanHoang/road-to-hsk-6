@@ -1,0 +1,10 @@
+import { chromium } from 'playwright';
+const b = await chromium.launch({ channel: 'chrome' });
+const p = await b.newPage({ viewport: { width: 1280, height: 900 }, deviceScaleFactor: 2 });
+await p.goto('https://road-to-toiec-900.vercel.app/', { waitUntil: 'domcontentloaded', timeout: 60000 });
+await p.waitForTimeout(6000);
+await p.screenshot({ path: '/tmp/ref-home.png' });
+console.log('title:', await p.title());
+console.log('--- text ---');
+console.log((await p.locator('body').innerText()).slice(0, 700));
+await b.close();

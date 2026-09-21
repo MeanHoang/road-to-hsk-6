@@ -127,19 +127,19 @@ export function ToneTrainerScreen({ level, words, backHref, title }) {
 
   if (pool.length === 0) {
     return (
-      <main className="page">
+      <>
         <Link className="back" href={backHref}>← {title}</Link>
         <p className="notice">
           Không có từ nào biến điệu trong phạm vi này — chọn dạng bài khác, hoặc mở ở phạm vi cả cấp.
         </p>
-      </main>
+      </>
     );
   }
 
   const right = correct.join('-');
 
   return (
-    <main className="page">
+    <>
       <header className="page-head">
         <Link className="back" href={backHref}>← {title}</Link>
         <h1>Luyện thanh điệu</h1>
@@ -211,6 +211,6 @@ export function ToneTrainerScreen({ level, words, backHref, title }) {
           Câu tiếp →
         </button>
       )}
-    </main>
+    </>
   );
 }

@@ -62,10 +62,10 @@ export function CardsScreen({ level, words, backHref, title }) {
     setDone(done + 1);
   }
 
-  if (!ready) return <main className="page"><p className="muted">Đang tải…</p></main>;
+  if (!ready) return <><p className="muted">Đang tải…</p></>;
 
   return (
-    <main className="page">
+    <>
       <header className="page-head">
         <Link className="back" href={backHref}>← {title}</Link>
         <h1>Thẻ từ vựng</h1>
@@ -147,6 +147,6 @@ export function CardsScreen({ level, words, backHref, title }) {
           )}
         </>
       )}
-    </main>
+    </>
   );
 }

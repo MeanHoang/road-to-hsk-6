@@ -49,22 +49,22 @@ export function ExercisesScreen({ level, lessons, vocab, backHref, title }) {
     setScore({ right: 0, wrong: 0 });
   }
 
-  if (!ready || !mounted) return <main className="page"><p className="muted">Đang tải…</p></main>;
+  if (!ready || !mounted) return <><p className="muted">Đang tải…</p></>;
 
   if (questions.length === 0) {
     return (
-      <main className="page">
+      <>
         <Link className="back" href={backHref}>← {title}</Link>
         <p className="notice">
           Chưa đủ dữ liệu để sinh bài tập — cần bài có tiêu đề và chú thích ngữ pháp.
         </p>
-      </main>
+      </>
     );
   }
 
   if (!q) {
     return (
-      <main className="page">
+      <>
         <header className="page-head">
           <Link className="back" href={backHref}>← {title}</Link>
           <h1>Xong vòng này</h1>
@@ -73,14 +73,14 @@ export function ExercisesScreen({ level, lessons, vocab, backHref, title }) {
           </p>
         </header>
         <button className="next-btn" onClick={restart}>Làm vòng mới →</button>
-      </main>
+      </>
     );
   }
 
   const ok = checked && (q.kind === 'order' ? built.join('') === q.answer.join('') : built[0] === q.answerId);
 
   return (
-    <main className="page">
+    <>
       <header className="page-head">
         <Link className="back" href={backHref}>← {title}</Link>
         <h1>Bài tập ngữ pháp</h1>
@@ -167,6 +167,6 @@ export function ExercisesScreen({ level, lessons, vocab, backHref, title }) {
       ) : (
         <button className="next-btn" onClick={next}>Câu tiếp →</button>
       )}
-    </main>
+    </>
   );
 }

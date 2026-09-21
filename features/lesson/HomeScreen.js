@@ -1,56 +1,79 @@
 'use client';
 
-import Link from 'next/link';
+import { NavCard } from '@/shared/ui/molecules/NavCard';
+import { Callout } from '@/shared/ui/atoms/Callout';
 import { levels, lessonsOfLevel } from './bundled';
 
 // Màn chủ = danh sách 6 CẤP, không phải danh sách bài.
 //
 // Khác TOEIC: ở đó trang chủ liệt kê thẳng các buổi vì chỉ có vài buổi. HSK có
 // 136 bài trải 6 cấp — liệt kê phẳng thì không dùng được, nên phải qua tầng cấp.
+//
+// Dùng nguyên hệ component của repo (.hero / .stat-row / NavCard / Callout).
+// Trước đó màn này tự viết CSS phẳng riêng, kết quả là nhạt hơn hẳn phần còn
+// lại của hệ — trong khi token và component đã có sẵn.
+
+function Stat({ value, label }) {
+  return (
+    <div className="stat">
+      <b>{value}</b>
+      <span>{label}</span>
+    </div>
+  );
+}
 
 export function HomeScreen() {
-  return (
-    <main className="page">
-      <header className="page-head">
-        <h1>Road to HSK 6</h1>
-        <p className="muted">
-          Bộ 标准教程 · 6 cấp · 18 quyển. Học theo sách, mỗi bài đủ 7 板块.
-        </p>
-      </header>
+  const ready = levels.map((l) => ({ level: l, lessons: lessonsOfLevel(l.level) }));
+  const lessonsReady = ready.reduce((n, r) => n + r.lessons.length, 0);
+  const wordsReady = ready.reduce(
+    (n, r) => n + r.lessons.reduce((m, l) => m + l.vocabulary.length, 0),
+    0,
+  );
 
-      <ul className="level-list">
-        {levels.map((level) => {
-          const ready = lessonsOfLevel(level.level).length;
+  return (
+    <>
+      <div className="hero">
+        <h1>Road to HSK 6</h1>
+        <p>Học theo bộ 标准教程 — 6 cấp, 18 quyển, mỗi bài đủ 7 板块</p>
+
+        <div className="stat-row">
+          <Stat value={levels.length} label="cấp" />
+          <Stat value={lessonsReady} label="bài đã nhập" />
+          <Stat value={wordsReady} label="từ vựng" />
+        </div>
+      </div>
+
+      <div className="stack">
+        {ready.map(({ level, lessons }) => {
+          const has = lessons.length > 0;
+          const words = lessons.reduce((n, l) => n + l.vocabulary.length, 0);
           return (
-            <li key={level.slug}>
-              <Link className="level-card" href={`/level/${level.slug}`}>
-                <div className="level-card__top">
-                  <span className="level-card__no">HSK {level.level}</span>
-                  <span className="level-card__book">{level.book}</span>
-                </div>
-                <p className="level-card__topics">{level.topics}</p>
-                <dl className="level-card__stats">
-                  <div>
-                    <dt>Bài</dt>
-                    <dd>{level.lessonCount}</dd>
-                  </div>
-                  <div>
-                    <dt>Từ vựng</dt>
-                    <dd>{level.vocabCumulative}</dd>
-                  </div>
-                  <div>
-                    <dt>Trọng tâm</dt>
-                    <dd className="level-card__focus">{level.grammarFocus}</dd>
-                  </div>
-                </dl>
-                <p className="level-card__ready">
-                  {ready > 0 ? `${ready}/${level.lessonCount} bài đã có nội dung` : 'Chưa nhập nội dung'}
-                </p>
-              </Link>
-            </li>
+            <NavCard
+              key={level.slug}
+              href={has ? `/level/${level.slug}` : null}
+              empty={!has}
+              lead={String(level.level).padStart(2, '0')}
+              leadBrand={has}
+              title={
+                <>
+                  {level.title} <span className="zh-inline">{level.book}</span>
+                </>
+              }
+              meta={
+                has
+                  ? `${lessons.length}/${level.lessonCount} bài · ${words} từ · ${level.grammarFocus}`
+                  : `${level.lessonCount} bài · ${level.vocabCumulative} từ — chưa nhập nội dung`
+              }
+              percent={has ? Math.round((lessons.length / level.lessonCount) * 100) : null}
+            />
           );
         })}
-      </ul>
-    </main>
+      </div>
+
+      <Callout>
+        Nội dung là file JSON tĩnh trong repo, tiến độ lưu ở máy bạn nên mất mạng vẫn học được.
+        Từ vựng HSK lũy kế nên tiến độ khoá theo <strong>cấp</strong>, không theo từng bài.
+      </Callout>
+    </>
   );
 }

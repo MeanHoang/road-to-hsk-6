@@ -38,7 +38,7 @@ export function VocabTableScreen({ lesson }) {
   });
 
   return (
-    <main className="page">
+    <>
       <header className="page-head">
         <Link className="back" href={`/lesson/${lesson.slug}`}>
           ← {lesson.titleZh}
@@ -111,6 +111,6 @@ export function VocabTableScreen({ lesson }) {
       </div>
 
       {shown.length === 0 && <p className="muted">Không có từ nào khớp.</p>}
-    </main>
+    </>
   );
 }

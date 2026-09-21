@@ -32,12 +32,12 @@
 
 .pinyin {
   font-style: italic;
-  color: var(--text-muted, #666);
+  color: var(--text-muted);
   letter-spacing: var(--tracking-wide);
 }
 
 .vi {
-  color: var(--text-muted, #666);
+  color: var(--text-muted);
 }
 
 .tones {
@@ -62,11 +62,6 @@
 
 /* --- layout chung --- */
 
-.page {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: var(--space-5) var(--space-4) var(--space-8);
-}
 
 .page-head { margin-bottom: var(--space-6); }
 .page-head h1 { margin: var(--space-2) 0; }
@@ -80,59 +75,23 @@
   text-decoration: none;
 }
 
-.muted { color: var(--text-muted, #666); font-size: var(--text-sm); }
+.muted { color: var(--text-muted); font-size: var(--text-sm); }
 .focus { font-weight: var(--weight-medium); }
 
 .notice {
   padding: var(--space-3) var(--space-4);
-  border-radius: var(--radius-md, 8px);
+  border-radius: var(--radius-md);
   background: color-mix(in srgb, var(--tone-2) 10%, transparent);
   font-size: var(--text-sm);
 }
 
 /* --- danh sách cấp --- */
 
-.level-list, .lesson-list, .section-list, .tool-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: var(--space-3);
-}
 
-.level-list { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
 /* grid kéo giãn <li>, nhưng <a> bên trong thì không — đo được lệch 220 vs 201px */
-.level-list > li, .tool-list > li, .section-list > li { display: flex; }
-.level-list > li > *, .tool-list > li > *, .section-list > li > * { flex: 1; }
 
-.level-card {
-  display: block;
-  padding: var(--space-4);
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-lg, 12px);
-  text-decoration: none;
-  color: inherit;
-}
 
-.level-card:hover { border-color: var(--tone-4); }
-.level-card__top { display: flex; justify-content: space-between; align-items: baseline; }
-.level-card__no { font-size: var(--text-xl); font-weight: var(--weight-bold); }
-.level-card__book { font-family: var(--font-zh); color: var(--text-muted, #666); }
-.level-card__topics { font-size: var(--text-sm); margin: var(--space-2) 0; }
 
-.level-card__stats {
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  gap: var(--space-4);
-  margin: var(--space-3) 0 0;
-  font-size: var(--text-xs);
-  align-items: start;
-}
-.level-card__stats dt { white-space: nowrap; }
-.level-card__stats dt { color: var(--text-muted, #666); }
-.level-card__stats dd { margin: 0; font-weight: var(--weight-medium); }
-.level-card__focus { font-family: var(--font-zh); }
-.level-card__ready { margin: var(--space-2) 0 0; font-size: var(--text-xs); color: var(--text-muted, #666); }
 
 /* --- khối có tiêu đề: nhịp dọc của trang nằm ở đây, không rải rác ở từng list --- */
 
@@ -145,46 +104,16 @@
   align-items: baseline;
   gap: var(--space-2);
 }
-.block__count { font-size: var(--text-sm); font-weight: var(--weight-normal); color: var(--text-muted, #666); }
-.block__hint { margin: 0 0 var(--space-3); font-size: var(--text-sm); color: var(--text-muted, #666); }
+.block__count { font-size: var(--text-sm); font-weight: var(--weight-normal); color: var(--text-muted); }
+.block__hint { margin: 0 0 var(--space-3); font-size: var(--text-sm); color: var(--text-muted); }
 
-.page-head__zh { font-family: var(--font-zh); font-size: var(--text-base); color: var(--text-muted, #666); font-weight: var(--weight-normal); }
+.page-head__zh { font-family: var(--font-zh); font-size: var(--text-base); color: var(--text-muted); font-weight: var(--weight-normal); }
 
 /* --- danh sách bài --- */
 
 .volume + .volume { margin-top: var(--space-6); }
-.volume__label { font-family: var(--font-zh); font-size: var(--text-base); margin: 0 0 var(--space-3); color: var(--text-muted, #666); }
+.volume__label { font-family: var(--font-zh); font-size: var(--text-base); margin: 0 0 var(--space-3); color: var(--text-muted); }
 
-.lesson-row {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-3) var(--space-4);
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-md, 8px);
-  text-decoration: none;
-  color: inherit;
-}
-.lesson-row:hover { border-color: var(--tone-4); }
-.lesson-row { padding: var(--space-4); }
-.lesson-row__no {
-  flex: 0 0 auto;
-  width: 32px;
-  height: 32px;
-  display: grid;
-  place-items: center;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--tone-4) 10%, transparent);
-  color: var(--tone-4);
-  font-size: var(--text-sm);
-  font-weight: var(--weight-medium);
-  font-variant-numeric: tabular-nums;
-}
-.lesson-row__title { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
-.lesson-row__zh { font-size: var(--text-2xl); }
-.lesson-row__meta { flex: 0 0 auto; display: flex; align-items: center; gap: var(--space-2); }
-.lesson-row__count { font-size: var(--text-xs); color: var(--text-muted, #666); white-space: nowrap; }
-.lesson-row__title .pinyin, .lesson-row__title .vi { font-size: var(--text-xs); }
 
 .tag {
   font-size: var(--text-xs);
@@ -206,40 +135,23 @@
   align-items: center;
   gap: var(--space-1);
   padding: var(--space-4);
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
   text-decoration: none;
   color: inherit;
 }
 .section-card:hover { border-color: var(--tone-4); }
 .section-card__zh { font-family: var(--font-zh); font-size: var(--text-2xl); }
-.section-card__label { font-size: var(--text-xs); color: var(--text-muted, #666); }
+.section-card__label { font-size: var(--text-xs); color: var(--text-muted); }
 
-.tool-list { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-.tool-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2px;
-  min-height: 64px;
-  padding: var(--space-3) var(--space-4);
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-md, 8px);
-  text-decoration: none;
-  color: inherit;
-}
-.tool-card:hover { border-color: var(--tone-4); }
-.tool-card__label { font-weight: var(--weight-medium); }
-.tool-card__meta { font-size: var(--text-xs); color: var(--text-muted, #666); }
 
 /* --- bảng từ vựng --- */
 
 .filters { display: flex; gap: var(--space-3); margin-bottom: var(--space-4); }
 .input {
   padding: var(--space-2) var(--space-3);
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
   font: inherit;
 }
 .filters .input:first-child { flex: 1; }
@@ -249,10 +161,10 @@
 .vocab-table th, .vocab-table td {
   text-align: left;
   padding: var(--space-2) var(--space-3);
-  border-bottom: 1px solid var(--border, #e2e4e8);
+  border-bottom: 1px solid var(--border);
   vertical-align: middle;
 }
-.vocab-table th { font-size: var(--text-xs); color: var(--text-muted, #666); font-weight: var(--weight-medium); }
+.vocab-table th { font-size: var(--text-xs); color: var(--text-muted); font-weight: var(--weight-medium); }
 .vocab-table .zh { font-size: var(--text-2xl); }
 
 .icon-btn {
@@ -269,7 +181,7 @@
 .mode-row { display: flex; gap: var(--space-2); margin: var(--space-4) 0 var(--space-2); flex-wrap: wrap; }
 .mode-btn {
   padding: var(--space-2) var(--space-4);
-  border: 1px solid var(--border, #e2e4e8);
+  border: 1px solid var(--border);
   border-radius: 999px;
   background: none;
   font: inherit;
@@ -287,8 +199,8 @@
   justify-content: center;
   padding: var(--space-6);
   margin: var(--space-4) 0;
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-lg, 12px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
   background: none;
   font: inherit;
   text-align: center;
@@ -302,14 +214,14 @@
 
 .tone-curve { display: flex; gap: var(--space-2); margin-top: var(--space-2); }
 .tone-curve__svg path { stroke: currentColor; }
-.tone-curve__base { stroke: var(--border, #e2e4e8); stroke-width: 1; }
+.tone-curve__base { stroke: var(--border); stroke-width: 1; }
 
 .opt-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 .opt {
   width: 100%;
   padding: var(--space-3);
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
   background: none;
   font: inherit;
   cursor: pointer;
@@ -319,15 +231,15 @@
 }
 .opt:disabled { cursor: default; }
 .opt__tones { font-size: var(--text-xl); font-weight: var(--weight-bold); }
-.opt__label { font-size: var(--text-xs); color: var(--text-muted, #666); }
+.opt__label { font-size: var(--text-xs); color: var(--text-muted); }
 .opt.is-right { border-color: var(--tone-3); color: var(--tone-3); }
 .opt.is-wrong { border-color: var(--tone-1); color: var(--tone-1); }
 
 .next-btn, .grade {
   margin-top: var(--space-4);
   padding: var(--space-3) var(--space-5);
-  border: 1px solid var(--border, #e2e4e8);
-  border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
   background: none;
   font: inherit;
   cursor: pointer;
@@ -341,32 +253,42 @@
 
 .section-card.is-todo { opacity: .4; cursor: not-allowed; }
 .note-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-4); }
-.note { padding: var(--space-4); border: 1px solid var(--border, #e2e4e8); border-radius: var(--radius-md, 8px); }
+.note { padding: var(--space-4); border: 1px solid var(--border); border-radius: var(--radius-md); }
 .note__head { display: flex; gap: var(--space-3); align-items: flex-start; }
 .note__no { flex: 0 0 auto; width: 24px; height: 24px; border-radius: 999px; display: grid; place-items: center; font-size: var(--text-xs); background: color-mix(in srgb, var(--tone-4) 14%, transparent); color: var(--tone-4); }
 .note__zh { font-size: var(--text-lg); }
-.note__vi { font-size: var(--text-sm); color: var(--text-muted, #666); margin: 2px 0 0; }
-.note__pattern { margin-top: var(--space-3); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md, 8px); background: color-mix(in srgb, var(--tone-3) 10%, transparent); display: inline-block; }
+.note__vi { font-size: var(--text-sm); color: var(--text-muted); margin: 2px 0 0; }
+.note__pattern { margin-top: var(--space-3); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md); background: color-mix(in srgb, var(--tone-3) 10%, transparent); display: inline-block; }
 .note__examples { list-style: none; margin: var(--space-3) 0 0; padding: 0; display: grid; gap: var(--space-2); }
 .note__examples li { display: flex; flex-direction: column; gap: 2px; }
 
 /* --- viết chữ & bài tập --- */
 .write-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); margin: var(--space-4) 0; }
-.write-box { width: 240px; height: 240px; border: 1px dashed var(--border, #e2e4e8); border-radius: var(--radius-md, 8px); }
+.write-box { width: 240px; height: 240px; border: 1px dashed var(--border); border-radius: var(--radius-md); }
 .notice.is-ok { background: color-mix(in srgb, var(--tone-3) 12%, transparent); }
 
 .ex-prompt { font-weight: var(--weight-medium); margin: var(--space-4) 0 var(--space-2); }
 .ex-slot {
   min-height: 64px; display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center;
-  padding: var(--space-3); border: 1px dashed var(--border, #e2e4e8); border-radius: var(--radius-md, 8px);
+  padding: var(--space-3); border: 1px dashed var(--border); border-radius: var(--radius-md);
   margin-bottom: var(--space-3);
 }
 .ex-pool { display: flex; flex-wrap: wrap; gap: var(--space-2); }
 .chip {
   padding: var(--space-2) var(--space-4); min-height: 44px;
-  border: 1px solid var(--border, #e2e4e8); border-radius: var(--radius-md, 8px);
+  border: 1px solid var(--border); border-radius: var(--radius-md);
   background: none; font: inherit; cursor: pointer; font-family: var(--font-zh); font-size: var(--text-xl);
 }
 .chip:disabled { opacity: .3; cursor: default; }
 .opt.is-picked { border-color: var(--tone-4); }
 .next-btn:disabled { opacity: .4; cursor: default; }
+
+/* --- phần dành riêng cho tiếng Trung, không có trong design system gốc --- */
+
+.zh-inline { font-family: var(--font-zh); font-weight: var(--weight-normal); color: var(--text-muted); font-size: var(--text-base); }
+.lesson-title { font-size: var(--text-2xl); line-height: var(--leading-tight); }
+.lesson-vi { color: var(--text-muted); }
+.lesson-tags { display: flex; align-items: center; gap: var(--space-2); flex: 0 0 auto; }
+.lesson-count { font-size: var(--text-xs); color: var(--text-subtle); white-space: nowrap; }
+.stat-row--left { justify-content: flex-start; }
+.nav-card .lead-slot .zh { font-size: var(--text-2xl); }

@@ -69,18 +69,18 @@ export function ListeningScreen({ level, words, backHref, title }) {
     [picked, item, update, today],
   );
 
-  if (!ready || !mounted) return <main className="page"><p className="muted">Đang tải…</p></main>;
+  if (!ready || !mounted) return <><p className="muted">Đang tải…</p></>;
   if (!item) {
     return (
-      <main className="page">
+      <>
         <Link className="back" href={backHref}>← {title}</Link>
         <p className="notice">Bài này chưa có từ vựng để luyện nghe.</p>
-      </main>
+      </>
     );
   }
 
   return (
-    <main className="page">
+    <>
       <header className="page-head">
         <Link className="back" href={backHref}>← {title}</Link>
         <h1>Luyện nghe</h1>
@@ -140,6 +140,6 @@ export function ListeningScreen({ level, words, backHref, title }) {
         💭 Giọng đọc là giọng tổng hợp của trình duyệt, không phải giọng bản xứ trong đĩa MP3 kèm
         sách. Dùng để nhận mặt âm, không dùng để chuẩn hoá phát âm.
       </p>
-    </main>
+    </>
   );
 }

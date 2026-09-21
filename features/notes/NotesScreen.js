@@ -20,7 +20,7 @@ const WIKI = {
 
 export function NotesScreen({ lesson }) {
   return (
-    <main className="page">
+    <>
       <header className="page-head">
         <Link className="back" href={`/lesson/${lesson.slug}`}>
           ← {lesson.titleZh}
@@ -64,6 +64,6 @@ export function NotesScreen({ lesson }) {
         . 💭 Công thức trong ô là do app tóm lại, sách không in dạng công thức — đối chiếu lại khi
         đọc bài.
       </p>
-    </main>
+    </>
   );
 }
