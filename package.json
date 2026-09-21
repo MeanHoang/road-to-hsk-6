@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "firebase": "^12.18.0",
+    "hanzi-writer": "^3.7.3",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "firebase-admin": "^14.3.0"
+    "firebase-admin": "^14.3.0",
+    "playwright": "^1.63.0"
   }
 }

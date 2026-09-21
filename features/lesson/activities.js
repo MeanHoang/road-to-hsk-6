@@ -33,11 +33,12 @@ const TOOLS = [
   { key: 'cards', path: 'cards', label: 'Thẻ từ vựng', needs: 'vocabulary' },
   { key: 'tones', path: 'tones', label: 'Luyện thanh điệu', needs: 'vocabulary' },
   { key: 'vocab', path: 'vocab', label: 'Bảng từ vựng', needs: 'vocabulary' },
+  { key: 'listen', path: 'listen', label: 'Luyện nghe', needs: 'vocabulary' },
 ];
 
 // Phần nào đã dựng xong màn. Phần còn lại vẫn hiện trong danh sách nhưng không
 // bấm được — để biết bài có gì mà chưa làm tới, thay vì giấu đi.
-const BUILT = new Set(['notes', 'cards', 'tones', 'vocab']);
+const BUILT = new Set(['notes', 'exercises', 'hanzi', 'cards', 'tones', 'vocab', 'listen']);
 
 /** Cấp 1-3 dùng bộ sơ cấp, cấp 4+ dùng bộ nâng cao. */
 export function sectionsForLevel(level) {

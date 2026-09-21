@@ -72,8 +72,10 @@
 .page-head h1 { margin: var(--space-2) 0; }
 
 .back {
-  display: inline-block;
-  margin-bottom: var(--space-3);
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;              /* WCAG 2.5.5 — đo được 23px trước khi sửa */
+  padding-right: var(--space-2);
   font-size: var(--text-sm);
   text-decoration: none;
 }
@@ -99,6 +101,9 @@
 }
 
 .level-list { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+/* grid kéo giãn <li>, nhưng <a> bên trong thì không — đo được lệch 220 vs 201px */
+.level-list > li, .tool-list > li, .section-list > li { display: flex; }
+.level-list > li > *, .tool-list > li > *, .section-list > li > * { flex: 1; }
 
 .level-card {
   display: block;
@@ -116,11 +121,14 @@
 .level-card__topics { font-size: var(--text-sm); margin: var(--space-2) 0; }
 
 .level-card__stats {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto 1fr;
   gap: var(--space-4);
   margin: var(--space-3) 0 0;
   font-size: var(--text-xs);
+  align-items: start;
 }
+.level-card__stats dt { white-space: nowrap; }
 .level-card__stats dt { color: var(--text-muted, #666); }
 .level-card__stats dd { margin: 0; font-weight: var(--weight-medium); }
 .level-card__focus { font-family: var(--font-zh); }
@@ -181,9 +189,12 @@
 .section-card__zh { font-family: var(--font-zh); font-size: var(--text-2xl); }
 .section-card__label { font-size: var(--text-xs); color: var(--text-muted, #666); }
 
-.tool-list { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+.tool-list { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
 .tool-card {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 56px;
   padding: var(--space-3) var(--space-4);
   border: 1px solid var(--border, #e2e4e8);
   border-radius: var(--radius-md, 8px);
@@ -204,7 +215,8 @@
 }
 .filters .input:first-child { flex: 1; }
 
-.vocab-table { width: 100%; border-collapse: collapse; }
+.table-scroll { overflow-x: auto; }   /* đo được 460 > 390 ở mobile */
+.vocab-table { width: 100%; border-collapse: collapse; min-width: 460px; }
 .vocab-table th, .vocab-table td {
   text-align: left;
   padding: var(--space-2) var(--space-3);
@@ -214,7 +226,14 @@
 .vocab-table th { font-size: var(--text-xs); color: var(--text-muted, #666); font-weight: var(--weight-medium); }
 .vocab-table .zh { font-size: var(--text-2xl); }
 
-.icon-btn { border: 0; background: none; cursor: pointer; font-size: var(--text-lg); }
+.icon-btn {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: var(--text-lg);
+  min-width: 44px;
+  min-height: 44px;
+}
 
 /* --- Tone Trainer & thẻ từ vựng --- */
 
@@ -301,3 +320,24 @@
 .note__pattern { margin-top: var(--space-3); padding: var(--space-2) var(--space-3); border-radius: var(--radius-md, 8px); background: color-mix(in srgb, var(--tone-3) 10%, transparent); display: inline-block; }
 .note__examples { list-style: none; margin: var(--space-3) 0 0; padding: 0; display: grid; gap: var(--space-2); }
 .note__examples li { display: flex; flex-direction: column; gap: 2px; }
+
+/* --- viết chữ & bài tập --- */
+.write-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); margin: var(--space-4) 0; }
+.write-box { width: 240px; height: 240px; border: 1px dashed var(--border, #e2e4e8); border-radius: var(--radius-md, 8px); }
+.notice.is-ok { background: color-mix(in srgb, var(--tone-3) 12%, transparent); }
+
+.ex-prompt { font-weight: var(--weight-medium); margin: var(--space-4) 0 var(--space-2); }
+.ex-slot {
+  min-height: 64px; display: flex; flex-wrap: wrap; gap: var(--space-2); align-items: center;
+  padding: var(--space-3); border: 1px dashed var(--border, #e2e4e8); border-radius: var(--radius-md, 8px);
+  margin-bottom: var(--space-3);
+}
+.ex-pool { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.chip {
+  padding: var(--space-2) var(--space-4); min-height: 44px;
+  border: 1px solid var(--border, #e2e4e8); border-radius: var(--radius-md, 8px);
+  background: none; font: inherit; cursor: pointer; font-family: var(--font-zh); font-size: var(--text-xl);
+}
+.chip:disabled { opacity: .3; cursor: default; }
+.opt.is-picked { border-color: var(--tone-4); }
+.next-btn:disabled { opacity: .4; cursor: default; }

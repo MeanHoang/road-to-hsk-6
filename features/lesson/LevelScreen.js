@@ -38,6 +38,11 @@ export function LevelScreen({ slug }) {
             Luyện thanh điệu cả cấp
           </Link>
         </li>
+        <li>
+          <Link className="tool-card" href={`/level/${level.slug}/exercises`}>
+            Bài tập ngữ pháp cả cấp
+          </Link>
+        </li>
       </ul>
 
       {level.volumes.map((vol) => {

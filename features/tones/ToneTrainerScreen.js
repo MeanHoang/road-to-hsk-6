@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { tonesOf, spokenTones, TONE_LABEL } from '@/shared/lib/pinyin';
 import { useProgress } from '@/features/progress/useProgress';
 import { ToneCurve } from './ToneCurve';
+import { useMounted } from '@/shared/lib/useMounted';
 
 // Ba dạng bài, đúng hai kỹ năng mà người tự học thiếu nhất:
 //
@@ -49,6 +50,7 @@ export function ToneTrainerScreen({ level, words, backHref, title }) {
   const [i, setI] = useState(0);
   const [picked, setPicked] = useState(null);
   const { update, today } = useProgress(level.slug);
+  const mounted = useMounted();
 
   // Bài biến điệu chỉ có nghĩa với từ THẬT SỰ đổi thanh khi đọc.
   //
@@ -98,10 +100,10 @@ export function ToneTrainerScreen({ level, words, backHref, title }) {
   }, [item, mode]);
 
   const options = useMemo(() => {
-    if (!item) return [];
+    if (!item || !mounted) return [];
     const right = correct.join('-');
     return [right, ...distractors(correct)].sort(() => Math.random() - 0.5);
-  }, [item, correct]);
+  }, [item, correct, mounted]);
 
   useEffect(() => {
     setPicked(null);

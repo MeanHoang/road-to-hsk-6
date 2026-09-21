@@ -64,6 +64,7 @@ export function VocabTableScreen({ lesson }) {
         </select>
       </div>
 
+      <div className="table-scroll">
       <table className="vocab-table">
         <thead>
           <tr>
@@ -107,6 +108,7 @@ export function VocabTableScreen({ lesson }) {
           })}
         </tbody>
       </table>
+      </div>
 
       {shown.length === 0 && <p className="muted">Không có từ nào khớp.</p>}
     </main>
